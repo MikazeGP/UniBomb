@@ -1,0 +1,4340 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) Iris(TM) Graphics 6100 (ID=0x162b)
+    Vendor:   Intel
+    VRAM:     2111 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\LZ4s.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\LZ4s.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\ExtDLL.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\ExtDLL.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\MLNClient.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\MLNClient.dll into Unity Child Domain
+- Completed reload, in  0.054 seconds
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.62Beta_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.446977 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 27f4 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 17.314680 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 563.
+Total: 1.481764 ms (FindLiveObjects: 0.149048 ms CreateObjectMapping: 0.134636 ms MarkObjects: 1.160911 ms  DeleteObjects: 0.034512 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.740039 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 597.
+Total: 1.278102 ms (FindLiveObjects: 0.160805 ms CreateObjectMapping: 0.089505 ms MarkObjects: 1.001622 ms  DeleteObjects: 0.023134 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.255178 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 625.
+Total: 1.464318 ms (FindLiveObjects: 0.196835 ms CreateObjectMapping: 0.224521 ms MarkObjects: 1.018689 ms  DeleteObjects: 0.021997 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.165567 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 597.
+Total: 1.179115 ms (FindLiveObjects: 0.147910 ms CreateObjectMapping: 0.088367 ms MarkObjects: 0.907945 ms  DeleteObjects: 0.032616 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.249763 ms
+Change NetworkingPeer.State => Before (Uninitialized)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 557.
+Total: 0.743347 ms (FindLiveObjects: 0.055751 ms CreateObjectMapping: 0.052337 ms MarkObjects: 0.617433 ms  DeleteObjects: 0.017066 ms)
+
+Change NetworkingPeer.State => Before (PeerCreated)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (ConnectingToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (ConnectingToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (ConnectedToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (ConnectedToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (Joined)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.680980 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 694.
+Total: 2.023724 ms (FindLiveObjects: 0.158909 ms CreateObjectMapping: 0.090263 ms MarkObjects: 1.749141 ms  DeleteObjects: 0.023134 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.989970 ms
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 569.
+Total: 1.721076 ms (FindLiveObjects: 0.150944 ms CreateObjectMapping: 0.087988 ms MarkObjects: 1.287583 ms  DeleteObjects: 0.192663 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.442215 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 749.
+Total: 0.866227 ms (FindLiveObjects: 0.042856 ms CreateObjectMapping: 0.041339 ms MarkObjects: 0.488485 ms  DeleteObjects: 0.293167 ms)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Explosion () [0x00000] in <filename unknown>:0 
+  at Timer.Update () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Explosion () [0x00000] in <filename unknown>:0 
+  at Timer.Update () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+衝突したring1(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+In
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Explosion () [0x00000] in <filename unknown>:0 
+  at Timer.Update () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+衝突したring1(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+In
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+衝突したring1(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+In
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Col
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Check () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Bomb.Explosion () [0x00000] in <filename unknown>:0 
+  at Timer.Update () [0x00000] in <filename unknown>:0 
+  at Bomb.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Col
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+衝突したring1(Clone)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+In
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (Joined)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
