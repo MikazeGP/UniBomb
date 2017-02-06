@@ -258,6 +258,6 @@ public class Player : Origin{
         int dieNum = m_gamemgr.m_plrBombStock[id];
         // SEを再生
         AudioManager.Instance.PlayVoice(DieVoice(dieNum));
-        //GrobalData.Instance._plrStock[id]--;
+        m_gamemgr.PlayerDie(id);
     }
 }

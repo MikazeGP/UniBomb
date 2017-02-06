@@ -20,6 +20,15 @@ public class GameMgr : Origin {
     //========================================================
     // 制限時間(現時点)
     private const int LIMIT_TIME = 300;
+
+    // RPC
+    // プレイヤーの残機を減らす
+    private const string DECREASE_PLAYER_STOCK_RPC = "DecPlayerStock";
+    // プレイヤーのボムの残機を減らす
+    private const string DECREASE_PLAYER_BOMBSTOCK_RPC = "DecPlayerBombStock";
+    // プレイヤーのボムの残機を増やす
+    private const string ADD_PLAYER_BOMBSTOCK_RPC = "AddPlayerBombStock";
+
     //========================================================
     // UI関連
     //========================================================
@@ -183,7 +192,17 @@ public class GameMgr : Origin {
 
         UpdateTimer();
 
-        UpdateFaceUI(m_maxPlayer);
+        // UI更新フラグにtrueが入ったとき
+        // 1度しか更新しないようにする
+        if (m_bUpdateUI) {
+
+            // 顔UIの更新
+            UpdateFaceUI(m_maxPlayer);
+            // プレイヤー残機UIの更新
+            UpdatePlayerStockUI(m_maxPlayer);
+            // falseを入れて2回以上更新しないようにする
+            m_bUpdateUI = false;
+        }
     }
 
     /// <summary>
@@ -251,7 +270,6 @@ public class GameMgr : Origin {
         }
     }
 
-
     //========================================================
     // UI処理はここまで
     //========================================================
@@ -259,7 +277,36 @@ public class GameMgr : Origin {
     //========================================================
     // UPC処理
     //========================================================
+    [MunRPC]
+    /// <summary>
+    /// プレイヤーの残機を減らす
+    /// </summary>
+    /// <param name="playerId"></param>
+    void DecPlayerStock(int playerId) {
+        print("Die");
+        // 指定したプレイヤーの残機を減らす
+        m_plrStock[playerId]--;    
+        // UIの更新
+        m_bUpdateUI = true;
+    }
+    [MunRPC]
+    /// <summary>
+    /// プレイヤーのボムの残機を減らす
+    /// </summary>
+    /// <param name="playerId">プレイヤーID</param>
+    void DecPlayerBombStock(int playerId) {
 
+        m_plrBombStock[playerId]--;
+    }
+    [MunRPC]
+    /// <summary>
+    /// プレイヤーのボムの残機を増やす
+    /// </summary>
+    /// <param name="playerId">プレイヤーID</param>
+    void AddPlayerBombStock(int playerId) {
+
+        m_plrBombStock[playerId]++;
+    }
 
     //========================================================
     // UPC処理はここまで
@@ -277,6 +324,9 @@ public class GameMgr : Origin {
     }
 
     // デバッグ用
+    /// <summary>
+    /// タイトルに戻る
+    /// </summary>
     void BackTitle() {
         // FIRE3ボタンが押されたとき
         if (Input.GetButtonDown(FIRE3_BUTTON)) {
@@ -294,4 +344,34 @@ public class GameMgr : Origin {
     //========================================================
     // 入力処理はここまで
     //========================================================
+
+    //========================================================
+    // プレイヤー情報更新処理
+    //========================================================
+    /// <summary>
+    /// プレイヤーが死亡したときの処理
+    /// </summary>
+    /// <param name="playerId"></param>
+    public void PlayerDie(int playerId) {
+
+        // 残機を減らす
+        monobitView.RPC(DECREASE_PLAYER_STOCK_RPC, MonobitTargets.All, playerId);
+    }
+    /// <summary>
+    /// プレイヤーのボムの残機増減処理
+    /// </summary>
+    /// <param name="playerId">プレイヤーID</param>
+    /// <param name="up">ボムを増やすか、減らす。true..増やす false..減らす</param>
+    public void ChangePlayerBombStock(int playerId,bool up) {
+
+        // upがtrueなら残機を上げ、falseなら残機を下げる
+        if (up) { monobitView.RPC(ADD_PLAYER_BOMBSTOCK_RPC, MonobitTargets.All, playerId); }
+        else { monobitView.RPC(DECREASE_PLAYER_BOMBSTOCK_RPC, MonobitTargets.All, playerId); }
+    }
+
+    //========================================================
+    // プレイヤー情報更新処理はここまで
+    //========================================================
+
+
 }
