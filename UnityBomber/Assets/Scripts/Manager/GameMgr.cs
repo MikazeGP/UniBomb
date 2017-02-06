@@ -9,90 +9,289 @@ using MonobitEngine;
 /// </summary>
 public class GameMgr : Origin {
 
-    
-    public Text _timerText,_stockText;
-    public Timer time = new Timer();
-    public Camera _camera;
-    public int plrnum;
-    private bool startAudio;
-    //public bool gameStart;
+    enum GAME_STATE  : int{
+        INIT = 0,
+        UPDATE ,
+        FINISH 
+    }
+
+    //========================================================
+    // 定数
+    //========================================================
+    // 制限時間(現時点)
+    private const int LIMIT_TIME = 300;
+    //========================================================
+    // UI関連
+    //========================================================
+    // 各プレイヤーの顔UI
+    public Image[] m_plrFaceUI;
+
+    // キャラクターの顔のスプライト
+    // ユニティちゃん
+    public Sprite m_utcFaceN_UI,m_utcFaceD_UI;
+    // ミサキ
+    public Sprite m_misakiFaceN_UI, m_misakiFaceD_UI;
+    // ユウコ
+    public Sprite m_yukoFaceN_UI, m_yukoFaceD_UI;
+
+    // 各プレイヤー名UI
+    public Text[] m_plrNameUI;
+
+    // 各プレイヤーの残機UI
+    public Text[] m_plrStockUI;
+
+    // 各プレイヤーの残機BGUI
+    public Image[] m_plrStockBgUI;
+
+    // タイマーUI
+    public Text m_timerUI;
+
+    // UI更新フラグ
+    public bool m_bUpdateUI;
+
+    //========================================================
+    // リテラル
+    //========================================================
+   // プレイヤー関連
     // 各プレイヤーの残機数
-    public int[] m_plrBombStock;
+    public int[] m_plrStock;
     // 各プレイヤーの名前
     public string[] m_plrName;
+    // 各プレイヤーのボムの残機数
+    public int[] m_plrBombStock;
+    // 各プレイヤーの使用キャラ名
+    public string[] m_useCharaName;
+    // 各プレイヤーの死亡フラグ
+    public bool[] m_dieFlag;
+    // プレイヤー数
+    public int m_maxPlayer;
+
     
+    // タイマー
+    private Timer m_timer = new Timer();
 
+    //========================================================
     // 初期化処理
-    void Start () {
+    //========================================================
+    void Start() {
 
-
-        m_plrBombStock = GrobalData.Instance._plrBombStock;
+        // グローバルデータから各プレイヤーの情報を取得
+        m_plrStock = GrobalData.Instance._plrStock;
         m_plrName = GrobalData.Instance._plrName;
+        m_plrBombStock = GrobalData.Instance._plrBombStock;
+        m_useCharaName = GrobalData.Instance._useCharaName;
+        m_maxPlayer = GrobalData.Instance._plrCount;
 
-        // 制限時間は300秒に設定する。
-        time.LimitTime = 300.0f;
-        // 終了関数を指定する。
-        time.FireDelegate = Finish;
-        time.IsEnable = false;
+        // 各プレイヤーの志望フラグをfalseにする
+        m_dieFlag = new bool[] { false,false,false,false};
+        // UIはまだ更新しない
+        m_bUpdateUI = false;
+
+        //UIの初期化
+        InitUI(m_maxPlayer);
+    }
+    //========================================================
+    // 初期化処理はここまで
+    //========================================================
+
+    //========================================================
+    // 更新処理
+    //========================================================
+    void Update() {
+
+        // UIの更新
+        UpdateUI();
+
+        // 入力処理の更新
+        UpdateInput();
+    }
+    //========================================================
+    // 更新処理はここまで
+    //========================================================
+
+    //========================================================
+    // UI処理
+    //========================================================
+    /// <summary>
+    /// UIの初期化
+    /// </summary>
+    /// <param name="maxPlayer"> プレイヤー数</param>
+    void InitUI(int maxPlayer) {
+
+        //========================================================
+        // プレイヤーUIの初期化
+        //========================================================
+        for (int i = 0 ; i < maxPlayer ; i++ ) {
+
+            // 使用キャラの画像を選択し表示する
+            switch (m_useCharaName[i]) {
+                // ユニティちゃん
+                case "UnityChan":
+                    m_plrFaceUI[i].sprite = m_utcFaceN_UI;
+                    break;
+                // ミサキ
+                case "Misaki":
+                    m_plrFaceUI[i].sprite = m_misakiFaceN_UI;
+                    break;
+                // ユウコ
+                case "Yuko":
+                    m_plrFaceUI[i].sprite = m_yukoFaceN_UI;
+                    break;
+                default:
+                    break;
+            }
+
+            // もし名前がなければ
+            if(m_plrName[i] == "") {
+                // プレイヤー(i+1)と表示する
+                m_plrNameUI[i].text = "<b>Player" + i + 1+"</b>";
+
+            }else {
+                // 名前をそのまま表示する
+                m_plrNameUI[i].text =  "<b>"+m_plrName[i]+"</b>";
+            }
+            // 残機数を表示
+            m_plrStockUI[i].text = "<b>" +new string('★',m_plrStock[i])+ "</b>";
+
+            //UIを Active にする
+            m_plrFaceUI[i].color = Color.white;
+            m_plrNameUI[i].color = new Color(1.0f, 0.4f, 0.1f, 1.0f);
+            m_plrStockUI[i].color = Color.yellow;
+            m_plrStockBgUI[i].color = Color.white;
+        }
+        //========================================================
+        // プレイヤーUIの初期化はここまで
+        //========================================================
+
+        //========================================================
+        // タイマーUIの初期化
+        //========================================================
+        // 制限時間を設定
+        m_timer.LimitTime = LIMIT_TIME;
+        // 終了関数を設定
+        // m_timer.FireDelegate = ;
+        m_timer.IsEnable = false;
+
+        //========================================================
+        // タイマーUIの初期化はここまで
+        //========================================================
+    }
+    /// <summary>
+    /// UIの更新
+    /// </summary>
+    void UpdateUI() {
+
+        UpdateTimer();
+
+        UpdateFaceUI(m_maxPlayer);
+    }
+
+    /// <summary>
+    /// タイマーの更新
+    /// </summary>
+    void UpdateTimer() {
         
-        startAudio = false;
-        //gameStart = false;
+        //分と秒を設定 
+        int minute = (int)m_timer.RemainingTime / 60;
+        int second = (int)m_timer.RemainingTime % 60;
+
+        // タイマーテキストに設定
+        m_timerUI.text = "<b>" +minute.ToString("D1")+":"+second.ToString("D2")+ "</b>";
     }
-	
-	// 更新処理
-	void Update () {
 
-        //_stockText.text = "<b>残機　" + new string('★', GrobalData.Instance._plrStock[PlayerId]) + "</b>";
+    /// <summary>
+    /// 顔UIの更新
+    /// </summary>
+    /// <param name="maxPlayer">プレイヤー数</param>
+    void UpdateFaceUI(int maxPlayer) {
 
-        if (time.Update()) {
+        // プレイヤー数分まわす
+        for (int i = 0; i < maxPlayer ; i++) {
+
+            // 死亡フラグがtrueなら
+            if(m_dieFlag[i] == true) {
+
+                // 使用キャラの画像をDieに変更し表示
+                switch (m_useCharaName[i])
+                {
+                    // ユニティちゃん
+                    case "UnityChan":
+                        m_plrFaceUI[i].sprite = m_utcFaceD_UI;
+                        break;
+                    // ミサキ
+                    case "Misaki":
+                        m_plrFaceUI[i].sprite = m_misakiFaceD_UI;
+                        break;
+                    // ユウコ
+                    case "Yuko":
+                        m_plrFaceUI[i].sprite = m_yukoFaceD_UI;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+    }
+    /// <summary>
+    /// プレイヤー残機UIの更新
+    /// </summary>
+    /// <param name="maxPlayer"></param>
+    void UpdatePlayerStockUI(int maxPlayer) {
+
+        for(int i = 0; i < maxPlayer; i++) {
+
+            if(m_plrStock[i] < 1) {
+
+                m_plrStockUI[i].text = "<b>×</b>";
+
+            }else {
+
+                m_plrStockUI[i].text = "<b>" + new string('★', m_plrStock[i]) + "</b>";
+            }
+        }
+    }
+
+
+    //========================================================
+    // UI処理はここまで
+    //========================================================
+
+    //========================================================
+    // UPC処理
+    //========================================================
+
+
+    //========================================================
+    // UPC処理はここまで
+    //========================================================
+
+    //========================================================
+    // 入力処理
+    //========================================================
+    /// <summary>
+    /// 入力処理の更新
+    /// </summary>
+    void UpdateInput() {
+
+        BackTitle();
+    }
+
+    // デバッグ用
+    void BackTitle() {
+        // FIRE3ボタンが押されたとき
+        if (Input.GetButtonDown(FIRE3_BUTTON)) {
             
-        }
-
-        PlayAudio();
-
-        this.SetTimer();
-
-        if (Input.GetKey(KeyCode.Escape)) { FadeManager.Instance.LoadLevel(TITLE_SCENE, 1.0f); }
-
-        if (!MonobitEngine.MonobitNetwork.isHost){
-            return;
-        }
-
-        if (Input.GetButtonDown(FIRE3_BUTTON) || Input.GetKey(KeyCode.S) && time.IsEnable == false) {
-
-            time.IsEnable = true;
-            //gameStart = true;
-        }
-	}
-
-    // タイマー設定
-    void SetTimer(){
-
-        // 分と秒を設定
-        int minute = (int)time.RemainingTime / 60;
-        int second = (int)time.RemainingTime % 60;
-
-        // テキストに代入
-        _timerText.text = "<b>"+minute.ToString("D2") + ":" + second.ToString("D2")+"</b>";
-    }
-
-    void PlayAudio() {
-
-        if(time.IsEnable == true && startAudio == false) {
-
-            print("In");
-
-            // ここで音を再生
-            AudioManager.Instance.PlayBGM(AUDIO.BGM_BATTLE1, AudioManager.BGM_FADE_SPEED_RATE_HIGH);
-            startAudio = true;
+            // サーバーに接続しているとき
+            if (MonobitEngine.MonobitNetwork.isConnect){
+                // サーバーから切断
+                MonobitNetwork.DisconnectServer();
+            }
+            // タイトルシーンに戻る
+            FadeManager.Instance.LoadLevel(TITLE_SCENE, 1.0f);
         }
     }
 
-    void Finish() {
-
-        // GrobalDataに結果を反映
-
-        // リザルトシーンに転移
-    }
-
+    //========================================================
+    // 入力処理はここまで
+    //========================================================
 }

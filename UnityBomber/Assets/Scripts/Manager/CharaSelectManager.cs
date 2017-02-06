@@ -71,7 +71,6 @@ public class CharaSelectManager : Origin {
 
     // RPC関連
     // プレイヤー数
-    [SerializeField]
     private int maxPlayer;
 
     // キャラクターを決定したか true..決定済み false..選択中
@@ -106,7 +105,7 @@ public class CharaSelectManager : Origin {
         // 使用キャラは選択中
         m_plrUseChara = new string[] {"","","","" };
 
-        // プレイヤー数をグローバルデータから取得
+        // 最大プレイヤー数をグローバルデータから取得
         maxPlayer = GrobalData.Instance._plrCount;
 
         // シーンは読み込んでいない
@@ -169,7 +168,6 @@ public class CharaSelectManager : Origin {
 
             // Unityちゃん
             case 1:
-
                 t_anotherName.text = "<b>ユニティちゃん</b>";
                 t_charaName.text = "<b>大鳥 こはく</b>";
                 t_kaisetsu.text = "バランス型\n弱点がなく、柔軟な立ち回りが可能\n初心者におすすめ";
@@ -182,7 +180,6 @@ public class CharaSelectManager : Origin {
                 r_misaki.rectTransform.position = new Vector3(-230, 334, 0);
                 r_yuko.rectTransform.position = new Vector3(-260, 334, 0);
                 m_bombStock = 3;
-
                 break;
             // みさき
             case 2:
@@ -352,11 +349,12 @@ public class CharaSelectManager : Origin {
         // 全員がキャラクターを選択し、ホストなら
         if (CheckDecided() && MonobitEngine.MonobitNetwork.isHost && m_loadScene == false)
         {
-            
+            // ステージセレクトに移動
             monobitView.RPC(LOAD_STAGE_SELECT, MonobitTargets.All, null);
 
+            // グローバルデータに使用キャラの名前を保存
             GrobalData.Instance._useCharaName = m_plrUseChara;
-
+            // シーンをロード済み
             m_loadScene = true;
         }
     }
@@ -388,7 +386,13 @@ public class CharaSelectManager : Origin {
     }
 
     [MunRPC]
+    /// <summary>
     /// キャラの選択or未選択を受け取る。
+    /// </summary>
+    /// <param name="plrID">プレイヤーID</param>
+    /// <param name="charaName">キャラクターネーム</param>
+    /// <param name="bombstock">ボムの残機</param>
+    /// <param name="decided">キャラを選択したか</param>
     private void RecvCharaSelected(int plrID,string charaName,int bombstock,bool decided) {
 
         
@@ -405,9 +409,10 @@ public class CharaSelectManager : Origin {
 
     }
 
-    /// 全員がキャラを選択したか
+    /// 全員がキャラを選択したか確認フラグ
     /// true..選択済み false..未選択
     bool CheckDecided() {
+
 
         for (int i = 0; i < maxPlayer; i++) {
 

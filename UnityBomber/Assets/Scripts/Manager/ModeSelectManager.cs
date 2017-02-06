@@ -2,6 +2,9 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// モード選択を管理するクラス
+/// </summary>
 public class ModeSelectManager : Origin {
 
     public GameObject SelectMark;
@@ -78,12 +81,12 @@ public class ModeSelectManager : Origin {
 
                 SelectMark.GetComponent<RectTransform>().anchoredPosition = new Vector2(-395f, 340f);
 
-                /*
+                
                 if (Input.GetButtonDown(FIRE1_BUTTON))
                 {
                     this.LoadCharacterSelectScene();
                    
-                }*/
+                }
 
                 break;
             

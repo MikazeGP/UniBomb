@@ -2,7 +2,9 @@
 using System.Collections;
 using MonobitEngine;
 
-
+/// <summary>
+/// プレイヤークラス
+/// </summary>
 public class Player : Origin{
 
     // ゲームマネージャーオブジェクトの名前
@@ -178,7 +180,7 @@ public class Player : Origin{
             SetTimer0();
 
             // 死亡処理を送信
-            monobitView.RPC(RPC_DIE, MonobitTargets.All, PlayerId, stockBomb);
+            monobitView.RPC(RPC_DIE, MonobitTargets.All, PlayerId);
 
         }
     }
@@ -196,7 +198,11 @@ public class Player : Origin{
         MonobitEngine.MonobitNetwork.Destroy(gameObject);
     }
 
-
+    /// <summary>
+    /// 死亡ボイスを設定
+    /// </summary>
+    /// <param name="stock"></param>
+    /// <returns></returns>
     private string DieVoice(int stock) {
 
         string voice = "";
@@ -247,12 +253,11 @@ public class Player : Origin{
 
     [MunRPC]
     // 死亡処理を受信
-    void Die(int id,int bomb) {
+    void Die(int id) {
 
+        int dieNum = m_gamemgr.m_plrBombStock[id];
         // SEを再生
-        AudioManager.Instance.PlayVoice(DieVoice(bomb));
-
-        // 
-        GrobalData.Instance._plrStock[id]--;
+        AudioManager.Instance.PlayVoice(DieVoice(dieNum));
+        //GrobalData.Instance._plrStock[id]--;
     }
 }
