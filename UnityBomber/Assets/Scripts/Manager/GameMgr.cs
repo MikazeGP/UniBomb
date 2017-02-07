@@ -9,11 +9,11 @@ using MonobitEngine;
 /// </summary>
 public class GameMgr : Origin {
 
-    enum GAME_STATE  : int{
+    public enum GAME_STATE  : int{
         INIT = 0,
         UPDATE ,
         FINISH 
-    }
+    };
 
     //========================================================
     // 定数
@@ -22,12 +22,16 @@ public class GameMgr : Origin {
     private const int LIMIT_TIME = 300;
 
     // RPC
-    // プレイヤーの残機を減らす
-    private const string DECREASE_PLAYER_STOCK_RPC = "DecPlayerStock";
-    // プレイヤーのボムの残機を減らす
-    private const string DECREASE_PLAYER_BOMBSTOCK_RPC = "DecPlayerBombStock";
-    // プレイヤーのボムの残機を増やす
-    private const string ADD_PLAYER_BOMBSTOCK_RPC = "AddPlayerBombStock";
+
+    // コルーチン
+    private const string COUNTDOWN_COROUTINE = "CountDown";
+
+    // カラー
+    // 透明
+    private Color TRANSPARENT_COLOR = new Color(1, 1, 1, 0);
+    // 不透明
+    private Color OPAQUE_COLOR = new Color(1, 1, 1, 1);
+
 
     //========================================================
     // UI関連
@@ -55,6 +59,13 @@ public class GameMgr : Origin {
     // タイマーUI
     public Text m_timerUI;
 
+    // カウントダウンUI
+    public Image m_countDownUI;
+    public Image m_GoUI;
+
+    // カウントダウン用スプライト
+    public Sprite[] m_countSprite;
+
     // UI更新フラグ
     public bool m_bUpdateUI;
 
@@ -74,8 +85,8 @@ public class GameMgr : Origin {
     public bool[] m_dieFlag;
     // プレイヤー数
     public int m_maxPlayer;
-
-    
+    // 現在のゲームの状態
+    public GAME_STATE m_currentState;
     // タイマー
     private Timer m_timer = new Timer();
 
@@ -91,6 +102,8 @@ public class GameMgr : Origin {
         m_useCharaName = GrobalData.Instance._useCharaName;
         m_maxPlayer = GrobalData.Instance._plrCount;
 
+        // フレームカウントを0にする
+        FrameCount = 0;
         // 各プレイヤーの志望フラグをfalseにする
         m_dieFlag = new bool[] { false,false,false,false};
         // UIはまだ更新しない
@@ -98,6 +111,9 @@ public class GameMgr : Origin {
 
         //UIの初期化
         InitUI(m_maxPlayer);
+
+        // 現在は初期化
+        m_currentState = GAME_STATE.INIT;
     }
     //========================================================
     // 初期化処理はここまで
@@ -153,7 +169,8 @@ public class GameMgr : Origin {
             // もし名前がなければ
             if(m_plrName[i] == "") {
                 // プレイヤー(i+1)と表示する
-                m_plrNameUI[i].text = "<b>Player" + i + 1+"</b>";
+                int j = i + 1;
+                m_plrNameUI[i].text = "<b>Player" + j+"</b>";
 
             }else {
                 // 名前をそのまま表示する
@@ -183,6 +200,21 @@ public class GameMgr : Origin {
 
         //========================================================
         // タイマーUIの初期化はここまで
+        //========================================================
+
+        //========================================================
+        // カウントダウンUIの初期化
+        //========================================================
+
+        // 透明にする
+        m_GoUI.color = TRANSPARENT_COLOR;
+        // 不透明にする
+        m_countDownUI.color = OPAQUE_COLOR;
+
+        // カウントダウンコルーチン
+        StartCoroutine(COUNTDOWN_COROUTINE);
+        //========================================================
+        // カウントダウンUIの初期化はここまで
         //========================================================
     }
     /// <summary>
@@ -261,13 +293,37 @@ public class GameMgr : Origin {
 
             if(m_plrStock[i] < 1) {
 
-                m_plrStockUI[i].text = "<b>×</b>";
+                m_plrStockUI[i].text ="<b>     KO</b>";
 
             }else {
 
                 m_plrStockUI[i].text = "<b>" + new string('★', m_plrStock[i]) + "</b>";
             }
         }
+    }
+    /// <summary>
+    /// // カウントダウンコルーチン
+    /// </summary>
+    IEnumerator CountDown() {
+
+        for(int i = 0; i < 3; i++) {
+            // 画像を切り替える
+            m_countDownUI.sprite = m_countSprite[i];
+            // １秒待つ
+            yield return new WaitForSeconds(1.0f);
+        }
+        // 透明にする
+        m_countDownUI.color = TRANSPARENT_COLOR;
+        // 不透明にする
+        m_GoUI.color = OPAQUE_COLOR;
+
+        // 0.5秒待つ
+        yield return new WaitForSeconds(0.5f);
+
+        // 透明にする
+        m_GoUI.color = TRANSPARENT_COLOR;
+
+        m_currentState = GAME_STATE.UPDATE;
     }
 
     //========================================================
@@ -277,36 +333,6 @@ public class GameMgr : Origin {
     //========================================================
     // UPC処理
     //========================================================
-    [MunRPC]
-    /// <summary>
-    /// プレイヤーの残機を減らす
-    /// </summary>
-    /// <param name="playerId"></param>
-    void DecPlayerStock(int playerId) {
-        print("Die");
-        // 指定したプレイヤーの残機を減らす
-        m_plrStock[playerId]--;    
-        // UIの更新
-        m_bUpdateUI = true;
-    }
-    [MunRPC]
-    /// <summary>
-    /// プレイヤーのボムの残機を減らす
-    /// </summary>
-    /// <param name="playerId">プレイヤーID</param>
-    void DecPlayerBombStock(int playerId) {
-
-        m_plrBombStock[playerId]--;
-    }
-    [MunRPC]
-    /// <summary>
-    /// プレイヤーのボムの残機を増やす
-    /// </summary>
-    /// <param name="playerId">プレイヤーID</param>
-    void AddPlayerBombStock(int playerId) {
-
-        m_plrBombStock[playerId]++;
-    }
 
     //========================================================
     // UPC処理はここまで
@@ -348,25 +374,13 @@ public class GameMgr : Origin {
     //========================================================
     // プレイヤー情報更新処理
     //========================================================
-    /// <summary>
-    /// プレイヤーが死亡したときの処理
-    /// </summary>
-    /// <param name="playerId"></param>
-    public void PlayerDie(int playerId) {
+    void PlayerDataUpdate() {
 
-        // 残機を減らす
-        monobitView.RPC(DECREASE_PLAYER_STOCK_RPC, MonobitTargets.All, playerId);
     }
-    /// <summary>
-    /// プレイヤーのボムの残機増減処理
-    /// </summary>
-    /// <param name="playerId">プレイヤーID</param>
-    /// <param name="up">ボムを増やすか、減らす。true..増やす false..減らす</param>
-    public void ChangePlayerBombStock(int playerId,bool up) {
 
-        // upがtrueなら残機を上げ、falseなら残機を下げる
-        if (up) { monobitView.RPC(ADD_PLAYER_BOMBSTOCK_RPC, MonobitTargets.All, playerId); }
-        else { monobitView.RPC(DECREASE_PLAYER_BOMBSTOCK_RPC, MonobitTargets.All, playerId); }
+    void DieCheck() {
+
+
     }
 
     //========================================================

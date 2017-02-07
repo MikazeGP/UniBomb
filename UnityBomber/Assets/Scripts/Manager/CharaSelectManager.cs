@@ -289,7 +289,10 @@ public class CharaSelectManager : Origin {
             }
 
             // SEを再生
-            //AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
+            AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
+
+            // ボイスを再生
+            AudioManager.Instance.PlayVoice(EnterVoice(CharaNum()));
 
             // グローバルデータにキャラの名前を保存
             GrobalData.Instance._plrCharaName = m_charaName;
@@ -308,10 +311,9 @@ public class CharaSelectManager : Origin {
                 // 現在選択しているキャラを送信してキャラを選択済みであることを送信する
                 monobitView.RPC(RECEIVE_CHARACTER_SELECT, MonobitTargets.All, MonobitNetwork.player.ID, m_charaName,m_bombStock,true);
             }
-
         }
         // キャンセルボタンが押されたとき
-        if (Input.GetButtonDown(FIRE2_BUTTON)) {
+        if (Input.GetButtonDown(FIRE2_BUTTON)&& m_loadScene == false) {
 
             // ルームに接続している時
             if (MonobitNetwork.inRoom && m_decided == true){
@@ -352,8 +354,6 @@ public class CharaSelectManager : Origin {
             // ステージセレクトに移動
             monobitView.RPC(LOAD_STAGE_SELECT, MonobitTargets.All, null);
 
-            // グローバルデータに使用キャラの名前を保存
-            GrobalData.Instance._useCharaName = m_plrUseChara;
             // シーンをロード済み
             m_loadScene = true;
         }
@@ -382,6 +382,9 @@ public class CharaSelectManager : Origin {
     /// </summary>
     private void LoadStageSelect() {
 
+        // グローバルデータに使用キャラの名前を保存
+        GrobalData.Instance._useCharaName = m_plrUseChara;
+
         FadeManager.Instance.MonobitLoadLevel(STAGE_SELECT_SCENE, 1.0f);
     }
 
@@ -395,7 +398,6 @@ public class CharaSelectManager : Origin {
     /// <param name="decided">キャラを選択したか</param>
     private void RecvCharaSelected(int plrID,string charaName,int bombstock,bool decided) {
 
-        
         m_plrDecided[plrID - 1] = decided;
 
         m_plrUseChara[plrID - 1] = charaName;
@@ -403,16 +405,11 @@ public class CharaSelectManager : Origin {
         // グローバルデータにボム最大所持を代入
         GrobalData.Instance._plrBombStock[plrID - 1] = bombstock;
 
-        // SEを再生
-        AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
-
-
     }
 
     /// 全員がキャラを選択したか確認フラグ
     /// true..選択済み false..未選択
     bool CheckDecided() {
-
 
         for (int i = 0; i < maxPlayer; i++) {
 
@@ -423,6 +420,27 @@ public class CharaSelectManager : Origin {
 
         }
         return true;
+    }
+    private string EnterVoice(int num) {
+
+        string voiceName = "";
+
+        switch (num) {
+
+            case 1:
+                voiceName = AUDIO.VOICE_V0023;
+                break;
+            case 2:
+                voiceName = AUDIO.VOICE_V2023;
+                break;
+            case 3:
+                voiceName = AUDIO.VOICE_V1023;
+                break;
+            default:
+                break;
+        }
+
+        return voiceName;
     }
 
 }
