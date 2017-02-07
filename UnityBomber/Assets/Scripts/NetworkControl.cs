@@ -11,16 +11,18 @@ class NetworkControl : Origin
     private GameObject playerObject = null;
 
     /** プレイヤーキャラクタ名. */
-    private string playerName = "";
+    private string m_playerName = "";
 
     /** プレイヤーNo */
-    private int playerNo = 0;
+    private int m_playerNo = 0;
+
+    public GameMgr m_gameMgr;
 
     // Use this for initialization
     void Start()
     {
 
-        playerName = GrobalData.Instance._plrCharaName;
+        m_playerName = m_gameMgr.m_useCharaName[PlayerId];
 
         MonobitEngine.MonobitNetwork.sendRate = 60;
         MonobitEngine.MonobitNetwork.updateStreamRate = 600;
@@ -34,13 +36,13 @@ class NetworkControl : Origin
         {
             //if(GrobalData.Instance._plrStock[PlayerId] == 0) { return; }
             // プレイヤーキャラクタが未登場の場合に登場させる
-            if (playerObject == null)
+            if (playerObject == null && m_gameMgr.m_dieFlag[PlayerId] != true)
             {
-                playerNo = MonobitNetwork.player.ID;
+                m_playerNo = MonobitNetwork.player.ID;
 
                 print(MonobitNetwork.player.ID);
 
-                playerObject = MonobitNetwork.Instantiate("Prefabs/"+playerName, SpawnPos(playerNo), SpawnQuat(playerNo), 0);
+                playerObject = MonobitNetwork.Instantiate("Prefabs/"+m_playerName, SpawnPos(m_playerNo), SpawnQuat(m_playerNo), 0);
             }
         }
     }
@@ -55,19 +57,19 @@ class NetworkControl : Origin
         {
 
             case 1:
-                Pos = new Vector3(-4.8f, 0.19f, 4.3f);
+                Pos = new Vector3(-4.8f, -0.17f, 4.3f);
                 break;
 
             case 2:
-                Pos = new Vector3(4.8f, 0.19f, -4.3f);
+                Pos = new Vector3(4.8f, -0.17f, -4.3f);
                 break;
 
             case 3:
-                Pos = new Vector3(4.8f, 0.19f, 4.3f);
+                Pos = new Vector3(4.8f, -0.17f, 4.3f);
                 break;
 
             case 4:
-                Pos = new Vector3(-4.8f, 0.19f, -4.3f);
+                Pos = new Vector3(-4.8f, -0.17f, -4.3f);
                 break;
 
             default:

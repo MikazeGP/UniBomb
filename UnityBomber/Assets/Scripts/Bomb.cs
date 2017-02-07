@@ -35,7 +35,7 @@ public class Bomb : Origin {
     public void Explosion() {
 
         // 置くことができるボムを増やす
-        plr.stockBomb++;
+        plr.m_stockBomb++;
 
         // エフェクトを生成
         GameObject effect = MonobitEngine.MonobitNetwork.Instantiate("Prefabs/ring1", gameObject.transform.position, Quaternion.identity, 0, null);

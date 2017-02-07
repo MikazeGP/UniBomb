@@ -140,12 +140,12 @@
     <Compile Include="Assets\Scripts\Manager\StageSelect.cs" />
     <Compile Include="Assets\Scripts\Manager\TitleManager.cs" />
     <Compile Include="Assets\Scripts\NetworkControl.cs" />
-    <Compile Include="Assets\Scripts\Origin.cs" />
-    <Compile Include="Assets\Scripts\OriginMgr.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\Timer.cs" />
-    <Compile Include="Assets\Scripts\Util.cs" />
     <Compile Include="Assets\Scripts\Util\Invincible.cs" />
+    <Compile Include="Assets\Scripts\Util\Origin.cs" />
+    <Compile Include="Assets\Scripts\Util\OriginMgr.cs" />
+    <Compile Include="Assets\Scripts\Util\Timer.cs" />
+    <Compile Include="Assets\Scripts\Util\Util.cs" />
     <Compile Include="Assets\Scripts\naichilab\FadeManager\Sample\FadeSample.cs" />
     <Compile Include="Assets\Scripts\naichilab\FadeManager\Scripts\FadeManager.cs" />
     <Compile Include="Assets\UnityChan\Bomb.cs" />
