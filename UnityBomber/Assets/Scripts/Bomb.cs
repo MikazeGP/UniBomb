@@ -4,15 +4,14 @@ using System.Collections;
 public class Bomb : Origin {
 
     public GameObject colObj;
-    public bool putCollider;
-    public Player plr;
-    Timer _timer;
+    public bool m_putCollider;
+    public Player m_plr;
+    Timer m_timer;
     private string m_playerName;
 
     void Start() {
 
-
-        putCollider = false;
+        m_putCollider = false;
 
         m_playerName = GrobalData.Instance._plrCharaName;
 
@@ -27,15 +26,12 @@ public class Bomb : Origin {
 
         Check();
 
-        if (_timer.Update()) {
+        if (m_timer.Update()) {
 
         }
     }
 
     public void Explosion() {
-
-        // 置くことができるボムを増やす
-        plr.m_stockBomb++;
 
         // エフェクトを生成
         GameObject effect = MonobitEngine.MonobitNetwork.Instantiate("Prefabs/ring1", gameObject.transform.position, Quaternion.identity, 0, null);
@@ -43,8 +39,12 @@ public class Bomb : Origin {
         //Destroy(this);
         MonobitEngine.MonobitNetwork.Destroy(gameObject);
 
-        // エフェクトを取り付ける
-        //AddEffect(X, Y, Z, 90, 0);
+        if (!monobitView.isMine){
+
+            return;
+        }
+        // 置くことができるボムを増やす
+        m_plr.m_stockBomb++;
 
     }
 
@@ -55,14 +55,7 @@ public class Bomb : Origin {
         // 爆発エフェクトに触れたら...
         if (col.tag == "Explosion") {
 
-            
-            
-            if(FrameCount%9999 == 0) {
-
-                print("In");
-
-                Explosion();
-            }
+            Explosion();
         }
     }
     /*
@@ -91,13 +84,12 @@ public class Bomb : Origin {
     // 3病後に爆発するように設定
     void SetTimer() {
 
-
-        _timer = new Timer();
+        m_timer = new Timer();
         // ３秒で爆発するよう設定
-        _timer.LimitTime = 3.0f;
+        m_timer.LimitTime = 3.0f;
         // 上記で指定した時間に達したとき
         //　Delegateで指定した関数を呼び出す
-        _timer.FireDelegate = Explosion;
+        m_timer.FireDelegate = Explosion;
     }
     
     /// <summary>
@@ -132,13 +124,17 @@ public class Bomb : Origin {
 
     void Check() {
 
-        if(Vector3.Distance(plr.transform.position,gameObject.transform.position) > 1.25f && putCollider == false) {
+        if (!monobitView.isMine) {
+
+            return;
+        }
+        if(Vector3.Distance(m_plr.transform.position,gameObject.transform.position) > 1.25f && m_putCollider == false) {
 
             gameObject.layer = 0;
 
-            plr.m_shotBomb = true;
+            m_plr.m_shotBomb = true;
 
-            putCollider = true;
+            m_putCollider = true;
         }
     }
 }

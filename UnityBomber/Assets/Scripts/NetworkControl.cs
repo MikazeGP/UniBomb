@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 class NetworkControl : Origin
 {
+
     /** プレイヤーキャラクタ. */
     private GameObject playerObject = null;
 
@@ -36,18 +37,23 @@ class NetworkControl : Origin
         {
             //if(GrobalData.Instance._plrStock[PlayerId] == 0) { return; }
             // プレイヤーキャラクタが未登場の場合に登場させる
-            if (playerObject == null && m_gameMgr.m_dieFlag[PlayerId] != true)
-            {
+            if (playerObject == null && m_gameMgr.m_dieFlag[PlayerId] != true){
+
                 m_playerNo = MonobitNetwork.player.ID;
-
                 print(MonobitNetwork.player.ID);
+                GameObject m_plrObj = MonobitNetwork.Instantiate("Prefabs/" + m_playerName, SpawnPos(m_playerNo), SpawnQuat(m_playerNo), 0);
 
-                playerObject = MonobitNetwork.Instantiate("Prefabs/"+m_playerName, SpawnPos(m_playerNo), SpawnQuat(m_playerNo), 0);
+                playerObject = m_plrObj;
+
             }
         }
     }
 
-    // 初期配置を設定
+    /// <summary>
+    /// プレイヤーの初期配置を設定
+    /// </summary>
+    /// <param name="num">プレイヤーID</param>
+    /// <returns></returns>
     Vector3 SpawnPos(int num)
     {
 
@@ -79,7 +85,11 @@ class NetworkControl : Origin
         return Pos;
     }
 
-
+    /// <summary>
+    /// プレイヤーの初期の向きを設定
+    /// </summary>
+    /// <param name="num"></param>
+    /// <returns></returns>
     Quaternion SpawnQuat(int num)
     {
 

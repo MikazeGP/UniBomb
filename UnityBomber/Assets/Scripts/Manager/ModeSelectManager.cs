@@ -34,7 +34,7 @@ public class ModeSelectManager : Origin {
 	void Update () {
         FrameCount++;
 
-        if(FrameCount >= 30) {
+        if(FrameCount >= 60) {
 
             if (m_stop) {
 

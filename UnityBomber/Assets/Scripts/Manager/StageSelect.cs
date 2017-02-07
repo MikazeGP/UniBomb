@@ -37,7 +37,7 @@ public class StageSelect : Origin {
 
         FrameCount++;
 
-        if(FrameCount >= 60) {
+        if(FrameCount >= 65) {
 
             if(m_stop == true) {
 

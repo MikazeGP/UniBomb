@@ -15,9 +15,9 @@ public class CharaSelectManager : Origin {
 
     // RPC
     // ステージセレクトに移動
-    private const string LOAD_STAGE_SELECT = "LoadStageSelect";
+    private const string RPC_LOAD_STAGE_SELECT = "LoadStageSelect";
     // キャラの選択or未選択を受け取る
-    private const string RECEIVE_CHARACTER_SELECT = "RecvCharaSelected";
+    private const string RPC_RECV_CHARACTER_SELECT = "RecvCharaSelected";
 
     // アニメータのパラメータ名
     private const string ANIPARAM_PLRNUM = "PlrNum";
@@ -143,7 +143,7 @@ public class CharaSelectManager : Origin {
 
         // フェードの関係上,
         // 60フレームになってから操作できるようにする
-        if(FrameCount >= 60) {
+        if(FrameCount >= 65) {
             
             // 入力情報を取得
             CheckState();
@@ -309,7 +309,7 @@ public class CharaSelectManager : Origin {
             if (MonobitNetwork.inRoom) {
 
                 // 現在選択しているキャラを送信してキャラを選択済みであることを送信する
-                monobitView.RPC(RECEIVE_CHARACTER_SELECT, MonobitTargets.All, MonobitNetwork.player.ID, m_charaName,m_bombStock,true);
+                monobitView.RPC(RPC_RECV_CHARACTER_SELECT, MonobitTargets.All, MonobitNetwork.player.ID, m_charaName,m_bombStock,true);
             }
         }
         // キャンセルボタンが押されたとき
@@ -331,7 +331,7 @@ public class CharaSelectManager : Origin {
                 m_decided = false;
 
                 // 現在選択しているキャラを送信してキャラを選択済みであることを送信する
-                monobitView.RPC(RECEIVE_CHARACTER_SELECT, MonobitTargets.All, MonobitNetwork.player.ID, "",0,false);
+                monobitView.RPC(RPC_RECV_CHARACTER_SELECT, MonobitTargets.All, MonobitNetwork.player.ID, "",0,false);
 
             }
 
@@ -352,7 +352,7 @@ public class CharaSelectManager : Origin {
         if (CheckDecided() && MonobitEngine.MonobitNetwork.isHost && m_loadScene == false)
         {
             // ステージセレクトに移動
-            monobitView.RPC(LOAD_STAGE_SELECT, MonobitTargets.All, null);
+            monobitView.RPC(RPC_LOAD_STAGE_SELECT, MonobitTargets.All, null);
 
             // シーンをロード済み
             m_loadScene = true;

@@ -189,6 +189,7 @@ public class ChatScript : Origin{
             {
                 MonobitNetwork.ConnectServer("UnityBomber_v1.5Beta");
                 AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
+               
             }
 
             // モードセレクトに戻る

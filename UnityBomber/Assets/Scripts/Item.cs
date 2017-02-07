@@ -17,7 +17,7 @@ public class Item : Origin
     // 定数
     //========================================================
     // RPC
-    private const string ITEM_ABILITY = "ItemAbility";
+    private const string RPC_ITEM_ABILITY = "ItemAbility";
 
     //========================================================
     // リテラル
@@ -78,7 +78,7 @@ public class Item : Origin
         {
 
             Player plr = col.GetComponent<Player>();
-            monobitView.RPC(ITEM_ABILITY, MonobitTargets.All, plr);
+            monobitView.RPC(RPC_ITEM_ABILITY, MonobitTargets.All, plr);
 
         }
     }

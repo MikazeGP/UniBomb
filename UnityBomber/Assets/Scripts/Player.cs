@@ -16,7 +16,9 @@ public class Player : Origin{
 
     // RPC
     // 死亡受信処理名
-    private const string RPC_DIE = "RecvDie";
+    private const string RPC_RECV_DIE = "RecvDie";
+    // ボム生成受信処理名
+    private const string RPC_RECV_SHOTBOMB = "RecShotBomb";
 
     //========================================================
     // リテラル
@@ -50,8 +52,6 @@ public class Player : Origin{
     //========================================================
     void Start () {
 
-        // フレームカウントを0にする
-        FrameCount = 0;
         // 発射可能にする
         m_shotBomb = true;
 
@@ -63,6 +63,8 @@ public class Player : Origin{
 
         // グローバルデータから残機の数を取得
         m_plrStock = m_gamemgr.m_plrStock[PlayerId];
+        // レイヤーを設定
+        gameObject.layer = 8 + PlayerId;
     }
     //========================================================
     // 初期化処理はここまで
@@ -73,7 +75,6 @@ public class Player : Origin{
     //========================================================
     void Update () {
 
-        FrameCount++;
         // オブジェクト所有権を所持しなければ実行しない
         if (!monobitView.isMine) {
 
@@ -109,31 +110,37 @@ public class Player : Origin{
     /// </summary>
     void InputUpdate() {
 
-        this.Shot();
+        this.ShotBomb();
 
         this.MoveFunc();
     } 
    /// <summary>
-   /// ボムを置く
+   /// ボム生成処理
    /// </summary>
-    void Shot() {
+    void ShotBomb() {
 
-        
+        // Fire1を押したとき
         if (Input.GetButton(FIRE1_BUTTON)) {
 
-            
-            if (FrameCount % 12 == 0 && m_shotBomb == true && m_stockBomb > 0) {
+            // ボムの残機があり、ボムを発射できるとき
+            if (m_shotBomb == true && m_stockBomb > 0) {
 
+                // ボムを生成
                 GameObject bombobj = MonobitEngine.MonobitNetwork.Instantiate("Prefabs/Pbomb", new Vector3(X, Y + 0.2f, Z), Quaternion.identity, 0, null);
-                bombobj.GetComponent<Bomb>().plr = this;
 
-                bombobj.layer = gameObject.layer;
+                // ボムを置けなくする
                 m_shotBomb = false;
 
-                m_stockBomb--;                                
+                // 残機を１減らす
+                m_stockBomb--;
 
-                // ここで音を再生
-                AudioManager.Instance.PlaySE(AUDIO.SE_PUTBOMB);
+                // ボムに生成
+                bombobj.GetComponent<Bomb>().m_plr = this;
+                // レイヤーを変更
+                bombobj.layer = gameObject.layer;
+
+                // ボム生成処理を送信
+                monobitView.RPC(RPC_RECV_SHOTBOMB, MonobitTargets.All);
             }
         }
     }
@@ -211,7 +218,7 @@ public class Player : Origin{
             SetTimer0();
 
             // 死亡処理を送信
-            monobitView.RPC(RPC_DIE, MonobitTargets.All, PlayerId);
+            monobitView.RPC(RPC_RECV_DIE, MonobitTargets.All, PlayerId);
 
           
         }
@@ -287,10 +294,13 @@ public class Player : Origin{
     }
 
     //========================================================
-    // UPC処理
+    // UPC処理  
     //========================================================
     [MunRPC]
-    // 死亡処理を受信
+    /// <summary>
+    /// 死亡処理を受信
+    /// </summary>
+    /// <param name="id">プレイヤーID</param>
     void RecvDie(int id) {
 
         int dieNum = m_gamemgr.m_plrBombStock[id];
@@ -303,7 +313,17 @@ public class Player : Origin{
             m_gamemgr.m_dieFlag[id] = true;
         }
     }
+    [MunRPC]
+    /// <summary>
+    /// ボム生成処理を受信
+    /// </summary>
+    /// <param name="bombObj">生成したボムオブジェクト</param>
+    void RecShotBomb() {
+
+        // ここで音を再生
+        AudioManager.Instance.PlaySE(AUDIO.SE_PUTBOMB);
+    }
     //========================================================
-    // UPC処理はここまで
+    // UPC処理はここまで 
     //========================================================
 }
