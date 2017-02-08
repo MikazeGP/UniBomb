@@ -19,7 +19,7 @@ public class Bomb : Origin {
 
         ChangeScale(m_playerName);
 
-       
+        AudioManager.Instance.PlaySE(AUDIO.SE_PUTBOMB);
     }
 
     void Update() {
@@ -33,16 +33,18 @@ public class Bomb : Origin {
 
     public void Explosion() {
 
-        // エフェクトを生成
-        GameObject effect = MonobitEngine.MonobitNetwork.Instantiate("Prefabs/ring1", gameObject.transform.position, Quaternion.identity, 0, null);
-
-        //Destroy(this);
-        MonobitEngine.MonobitNetwork.Destroy(gameObject);
-
         if (!monobitView.isMine){
 
             return;
         }
+
+        // エフェクトを生成
+        GameObject effect = MonobitEngine.MonobitNetwork.Instantiate("Prefabs/ring1", gameObject.transform.position, Quaternion.identity, 0, null);
+
+        effect.GetComponent<Effect>().m_plr = m_plr;
+
+        MonobitEngine.MonobitNetwork.Destroy(gameObject);
+
         // 置くことができるボムを増やす
         m_plr.m_stockBomb++;
 

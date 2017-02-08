@@ -19,6 +19,7 @@ public class Player : Origin{
     private const string RPC_RECV_DIE = "RecvDie";
     // ボム生成受信処理名
     private const string RPC_RECV_SHOTBOMB = "RecShotBomb";
+    
 
     //========================================================
     // リテラル
@@ -134,13 +135,10 @@ public class Player : Origin{
                 // 残機を１減らす
                 m_stockBomb--;
 
-                // ボムに生成
+                // ボムに生成主の情報を送る
                 bombobj.GetComponent<Bomb>().m_plr = this;
                 // レイヤーを変更
                 bombobj.layer = gameObject.layer;
-
-                // ボム生成処理を送信
-                monobitView.RPC(RPC_RECV_SHOTBOMB, MonobitTargets.All);
             }
         }
     }
@@ -219,7 +217,6 @@ public class Player : Origin{
 
             // 死亡処理を送信
             monobitView.RPC(RPC_RECV_DIE, MonobitTargets.All, PlayerId);
-
           
         }
     }
@@ -312,16 +309,6 @@ public class Player : Origin{
         if (m_gamemgr.m_plrStock[id] < 1) {
             m_gamemgr.m_dieFlag[id] = true;
         }
-    }
-    [MunRPC]
-    /// <summary>
-    /// ボム生成処理を受信
-    /// </summary>
-    /// <param name="bombObj">生成したボムオブジェクト</param>
-    void RecShotBomb() {
-
-        // ここで音を再生
-        AudioManager.Instance.PlaySE(AUDIO.SE_PUTBOMB);
     }
     //========================================================
     // UPC処理はここまで 

@@ -41,9 +41,9 @@ public class ChatScript : Origin{
 
         // プレイヤー名をグローバルデータに登録
         for (int i = 0; i < maxPlayers; i++){
-
             // 各プレイヤーの名前をグローバルデータに保存
-            GrobalData.Instance._plrName[i] = MonobitNetwork.playerList[i].name;
+            //GrobalData.Instance._plrName[i] = MonobitNetwork.playerList[i].name;
+            GrobalData.Instance._plrName[i] = MonobitPlayer.Find(i + 1).name;
         }
         // 最大プレイ人数をグローバルデータに保存
         GrobalData.Instance._plrCount = maxPlayers;

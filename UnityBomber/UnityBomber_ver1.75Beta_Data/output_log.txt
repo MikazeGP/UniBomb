@@ -1,0 +1,96 @@
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) Iris(TM) Graphics 6100 (ID=0x162b)
+    Vendor:   Intel
+    VRAM:     2111 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll into Unity Child Domain
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll (this message is harmless)
+Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll into Unity Child Domain
+- Completed reload, in  0.048 seconds
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.210218 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 7d0 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.719182 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 2.762907 ms (FindLiveObjects: 0.096711 ms CreateObjectMapping: 0.113777 ms MarkObjects: 2.475807 ms  DeleteObjects: 0.075472 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.385327 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 602.
+Total: 0.383810 ms (FindLiveObjects: 0.050820 ms CreateObjectMapping: 0.039063 ms MarkObjects: 0.280652 ms  DeleteObjects: 0.012515 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.634230 ms
+Change NetworkingPeer.State => Before (Uninitialized)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 562.
+Total: 1.149536 ms (FindLiveObjects: 0.129327 ms CreateObjectMapping: 0.049683 ms MarkObjects: 0.922359 ms  DeleteObjects: 0.046269 ms)
+
+Change NetworkingPeer.State => Before (PeerCreated)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (ConnectingToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (ConnectingToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (ConnectedToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (ConnectedToTestServer)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (Joined)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.734246 ms
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 699.
+Total: 0.603402 ms (FindLiveObjects: 0.047028 ms CreateObjectMapping: 0.040201 ms MarkObjects: 0.501002 ms  DeleteObjects: 0.014791 ms)
+
+Change NetworkingPeer.State => Before (Joined)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+

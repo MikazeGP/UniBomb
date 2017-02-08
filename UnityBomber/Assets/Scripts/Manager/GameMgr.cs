@@ -222,6 +222,11 @@ public class GameMgr : Origin {
     /// </summary>
     void UpdateUI() {
 
+        // タイマークラスの更新
+        if (m_timer.Update()){
+
+        }
+        // タイマーUIの更新
         UpdateTimer();
 
         // UI更新フラグにtrueが入ったとき
@@ -323,7 +328,11 @@ public class GameMgr : Origin {
         // 透明にする
         m_GoUI.color = TRANSPARENT_COLOR;
 
+        // Updadeに移行
         m_currentState = GAME_STATE.UPDATE;
+
+        // タイマーをスタートする
+        m_timer.IsEnable = true;
     }
 
     //========================================================
@@ -386,6 +395,5 @@ public class GameMgr : Origin {
     //========================================================
     // プレイヤー情報更新処理はここまで
     //========================================================
-
 
 }

@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Effect : Origin {
 
-    private Timer _timer;
-    private Player plr;
+    private Timer m_timer;
+    public Player m_plr;
     private string m_playerName;
 
     // 親オブジェクト
@@ -22,8 +22,13 @@ public class Effect : Origin {
 
         this.SetTimer();
 
+        if (!monobitView.isMine) {
+
+            return;
+        }
+
         m_playerName = GrobalData.Instance._plrCharaName;
-        plr = GameObject.Find(m_playerName + "(Clone)").GetComponent<Player>();
+        
         ChangeScale(m_playerName);
 
         // キャラに応じて再生する爆発音を変更する
@@ -60,7 +65,7 @@ public class Effect : Origin {
     // Update is called once per frame
     void Update () {
 
-        if (_timer.Update()) {
+        if (m_timer.Update()) {
 
         }
 	}
@@ -81,9 +86,9 @@ public class Effect : Origin {
     // タイマーを設定
     void SetTimer() {
 
-        _timer = new Timer();
-        _timer.LimitTime = 1.05f;
-        _timer.FireDelegate = End;
+        m_timer = new Timer();
+        m_timer.LimitTime = 1.05f;
+        m_timer.FireDelegate = End;
     }
 
     // キャラに応じてエフェクトの大きさを変更

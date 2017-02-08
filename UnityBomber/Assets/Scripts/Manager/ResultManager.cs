@@ -173,8 +173,13 @@ public class ResultManager : Origin {
     /// </summary>
     void UpdateUI() {
 
+        if (m_timer.Update()){
+
+        }
+
         // タイマーの更新
         UpdateTimer();
+
     }
 
     /// <summary>
