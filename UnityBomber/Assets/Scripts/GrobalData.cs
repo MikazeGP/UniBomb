@@ -68,4 +68,6 @@ public class GrobalData : MonoBehaviour {
 
     // 各プレイヤーのスコア
     public int[] _plrScore = new int[] { 0, 0, 0, 0};
+
+    public bool[] _plrWinFlag = new bool[] { false, false, false, false };
 }

@@ -136,11 +136,13 @@
     <Compile Include="Assets\Scripts\Manager\LoadManager.cs" />
     <Compile Include="Assets\Scripts\Manager\ModeSelectManager.cs" />
     <Compile Include="Assets\Scripts\Manager\OpsionManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\ResultManager.cs" />
     <Compile Include="Assets\Scripts\Manager\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Manager\StageSelect.cs" />
     <Compile Include="Assets\Scripts\Manager\TitleManager.cs" />
     <Compile Include="Assets\Scripts\NetworkControl.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\RandomBG.cs" />
     <Compile Include="Assets\Scripts\Util\Invincible.cs" />
     <Compile Include="Assets\Scripts\Util\Origin.cs" />
     <Compile Include="Assets\Scripts\Util\OriginMgr.cs" />
