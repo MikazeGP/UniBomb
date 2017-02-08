@@ -40,7 +40,6 @@ class NetworkControl : Origin
             if (playerObject == null && m_gameMgr.m_dieFlag[PlayerId] != true){
 
                 m_playerNo = MonobitNetwork.player.ID;
-                print(MonobitNetwork.player.ID);
                 GameObject m_plrObj = MonobitNetwork.Instantiate("Prefabs/" + m_playerName, SpawnPos(m_playerNo), SpawnQuat(m_playerNo), 0);
 
                 playerObject = m_plrObj;

@@ -12,6 +12,7 @@ public static class AUDIO
 	  public const string SE_CANSEL = "Cansel";
 	  public const string SE_COUNTDOWN = "CountDown";
 	  public const string SE_ENTER = "Enter";
+	  public const string SE_FINISH = "Finish";
 	  public const string SE_GETITEM1 = "GetItem1";
 	  public const string SE_GETITEM2 = "GetItem2";
 	  public const string SE_HIT = "Hit";

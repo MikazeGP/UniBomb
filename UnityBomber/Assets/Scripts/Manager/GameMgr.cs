@@ -22,9 +22,12 @@ public class GameMgr : Origin {
     private const int LIMIT_TIME = 300;
 
     // RPC
-
+    private const string RPC_RECV_LOAD_RESULTSCENE = "RecvLoadResultScene";
     // コルーチン
+    // カウントダウンコルーチン
     private const string COUNTDOWN_COROUTINE = "CountDown";
+    // リザルトコルーチン
+    private const string LOADRESULT_COROUTINE = "LoadResult";
 
     // カラー
     // 透明
@@ -68,7 +71,7 @@ public class GameMgr : Origin {
 
     // UI更新フラグ
     public bool m_bUpdateUI;
-
+   
     //========================================================
     // リテラル
     //========================================================
@@ -89,6 +92,9 @@ public class GameMgr : Origin {
     public GAME_STATE m_currentState;
     // タイマー
     private Timer m_timer = new Timer();
+    // プレイヤー情報更新フラグ
+    public bool m_bUpdatePlayerData;
+
 
     //========================================================
     // 初期化処理
@@ -108,6 +114,8 @@ public class GameMgr : Origin {
         m_dieFlag = new bool[] { false,false,false,false};
         // UIはまだ更新しない
         m_bUpdateUI = false;
+        // プレイヤーデータは更新しない
+        m_bUpdatePlayerData = false;
 
         //UIの初期化
         InitUI(m_maxPlayer);
@@ -129,6 +137,9 @@ public class GameMgr : Origin {
 
         // 入力処理の更新
         UpdateInput();
+
+        // プレイヤーデータの更新
+        UpdatePlayerData();
     }
     //========================================================
     // 更新処理はここまで
@@ -195,7 +206,7 @@ public class GameMgr : Origin {
         // 制限時間を設定
         m_timer.LimitTime = LIMIT_TIME;
         // 終了関数を設定
-        // m_timer.FireDelegate = ;
+        m_timer.FireDelegate = Finishi;
         m_timer.IsEnable = false;
 
         //========================================================
@@ -333,6 +344,8 @@ public class GameMgr : Origin {
 
         // タイマーをスタートする
         m_timer.IsEnable = true;
+        // BGMを再生
+        AudioManager.Instance.PlayBGM(AUDIO.BGM_BATTLE1);
     }
 
     //========================================================
@@ -342,7 +355,19 @@ public class GameMgr : Origin {
     //========================================================
     // UPC処理
     //========================================================
+    /// <summary>
+    /// リザルトシーンを読み込む受信処理
+    /// </summary>
+    [MunRPC]
+    void RecvLoadResultScene() {
 
+        for(int i = 0 ; i < m_maxPlayer; i++) {
+            if(m_dieFlag[i] == false) { GrobalData.Instance._plrWinFlag[i] = true; print(i); }
+        }
+
+        // リザルト画面に移動
+        FadeManager.Instance.MonobitLoadLevel(RESULT_SCENE, 1.0f);
+    }
     //========================================================
     // UPC処理はここまで
     //========================================================
@@ -383,17 +408,74 @@ public class GameMgr : Origin {
     //========================================================
     // プレイヤー情報更新処理
     //========================================================
-    void PlayerDataUpdate() {
+    /// <summary>
+    /// プレイヤー情報更新処理
+    /// </summary>
+    void UpdatePlayerData() {
 
+        if (m_bUpdatePlayerData == true)  {
+
+            // 生存しているプレイヤーの確認
+            CheckPlayerStock();
+            // falseを入れて2回以上更新しないようにする
+            m_bUpdatePlayerData = false;
+        }
     }
+    /// <summary>
+    /// 生存しているプレイヤーの確認
+    /// </summary>
+    void CheckPlayerStock() {
+        int i = 0;
+        for(int j = 0; j < m_maxPlayer ; j++ ) {
 
-    void DieCheck() {
-
-
+           if(m_dieFlag[j] == true) { i++; }
+        }
+        // 場にいるプレイヤーが１人以下のとき
+        if( m_maxPlayer - i  < 2) {
+            // ゲームを終了する。
+            Finishi();
+        }
     }
 
     //========================================================
     // プレイヤー情報更新処理はここまで
+    //========================================================
+
+    //========================================================
+    // ゲーム終了処理
+    //========================================================
+    /// <summary>
+    /// ゲーム終了処理
+    /// </summary>
+    void Finishi() {
+
+        if(m_currentState == GAME_STATE.FINISH) { return; }
+        // ゲームを終了する
+        m_currentState = GAME_STATE.FINISH;
+        // 音を再生
+        AudioManager.Instance.PlaySE(AUDIO.SE_FINISH);
+        // BGMをフェードアウトする
+        AudioManager.Instance.FadeOutBGM();
+
+        if (MonobitEngine.MonobitNetwork.isHost) {
+
+            StartCoroutine(LOADRESULT_COROUTINE);
+        }
+    }
+    /// <summary>
+    /// リザルトシーンを読み込む受信処理
+    /// (ホストのみ)
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator LoadResult() {
+
+        // ２秒待つ
+        yield return new WaitForSeconds(2.0f);
+        // リザルトシーンを読み込む送信処理
+        monobitView.RPC(RPC_RECV_LOAD_RESULTSCENE, MonobitTargets.All, null);
+    }
+    //========================================================
+    // ゲーム終了処理はここまで
     //========================================================
 
 }

@@ -116,7 +116,7 @@ public class StageSelect : Origin {
 
             monobitView.RPC(LOAD_STAGE, MonobitTargets.All, null);
 
-            AudioManager.Instance.FadeOutBGM(AudioManager.BGM_FADE_SPEED_RATE_HIGH);
+            m_stop = true;
         }
 
         // キャンセルキーが押されたとき
@@ -150,5 +150,7 @@ public class StageSelect : Origin {
                 FadeManager.Instance.MonobitLoadLevel(STAGE2_SCENE, 1.0f);
                 break;
         }
+        // BGMを止める
+        AudioManager.Instance.FadeOutBGM();
     }
 }

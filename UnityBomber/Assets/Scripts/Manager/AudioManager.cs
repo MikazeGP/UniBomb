@@ -37,7 +37,7 @@ public class AudioManager : SingletonMonoBehaviour<AudioManager>
     public AudioSource _bgmSource;
     private List<AudioSource> _seSourceList;
     private List<AudioSource> _voiceSourceList;
-    private const int SE_SOURCE_NUM = 12;
+    private const int SE_SOURCE_NUM = 13;
     private const int VOICE_SOURCE_NUM = 100;
 
     //全AudioClipを保持

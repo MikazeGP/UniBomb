@@ -1,96 +1,960 @@
+Mono path[0] = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data/Managed'
+Mono path[1] = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data/Mono'
+Mono config path = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data/Mono/etc'
+PlayerConnection initialized from D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55430
+Multi-casting "[IP] 192.168.11.2 [Port] 55430 [Flags] 3 [Guid] 2836558340 [EditorId] 391047873 [Version] 1048832 [Id] WindowsPlayer(Keishi-PC) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.11.2:55430]...
+Timed out. Continuing without host connection.
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56340
+PlayerConnection already initialized - listening to [192.168.11.2:55430]
 Initialize engine version: 5.4.1f1 (649f48bbbf0f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) Iris(TM) Graphics 6100 (ID=0x162b)
-    Vendor:   Intel
-    VRAM:     2111 MB
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll (this message is harmless)
-Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll into Unity Child Domain
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll (this message is harmless)
-Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll into Unity Child Domain
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll (this message is harmless)
-Loading C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll into Unity Child Domain
 - Completed reload, in  0.048 seconds
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Shimomura Keishi\Desktop\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.dll (this message is harmless)
-desktop: 2560x1600 60Hz; virtual: 2560x1600 at 0,0
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.210218 ms
-Setting up 1 worker threads for Enlighten.
-  Thread -> id: 7d0 -> priority: 1 
+Mono path[0] = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data/Managed'
+Mono path[1] = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data/Mono'
+Mono config path = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data/Mono/etc'
+PlayerConnection initialized from D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.75Beta_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55493
+Multi-casting "[IP] 192.168.11.2 [Port] 55493 [Flags] 3 [Guid] 14006707 [EditorId] 391047873 [Version] 1048832 [Id] WindowsPlayer(Keishi-PC) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.11.2:55493]...
+UnloadTime: 2.571935 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1f18c -> priority: 1 
+  Thread -> id: 1f0ec -> priority: 1 
+Timed out. Continuing without host connection.
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56707
+PlayerConnection already initialized - listening to [192.168.11.2:55493]
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\LZ4s.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\ExtDLL.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\MLNClient.dll into Unity Child Domain
+- Completed reload, in  0.051 seconds
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.75Beta_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 8.719182 ms
+UnloadTime: 19.871202 ms
+System memory in use before: 72.0 MB.
+System memory in use after: 72.0 MB.
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 565.
-Total: 2.762907 ms (FindLiveObjects: 0.096711 ms CreateObjectMapping: 0.113777 ms MarkObjects: 2.475807 ms  DeleteObjects: 0.075472 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 568.
+Total: 0.816636 ms (FindLiveObjects: 0.091875 ms CreateObjectMapping: 0.123448 ms MarkObjects: 0.572868 ms  DeleteObjects: 0.020479 ms)
 
+<RI> Initialized touch support.
+UnloadTime: 2.658690 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.385327 ms
+UnloadTime: 0.444300 ms
+System memory in use before: 72.1 MB.
+System memory in use after: 72.1 MB.
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 602.
-Total: 0.383810 ms (FindLiveObjects: 0.050820 ms CreateObjectMapping: 0.039063 ms MarkObjects: 0.280652 ms  DeleteObjects: 0.012515 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 605.
+Total: 0.349580 ms (FindLiveObjects: 0.027590 ms CreateObjectMapping: 0.019911 ms MarkObjects: 0.280176 ms  DeleteObjects: 0.020764 ms)
 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1f6fc -> priority: 1 
+  Thread -> id: 1f710 -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.634230 ms
+UnloadTime: 1.064955 ms
 Change NetworkingPeer.State => Before (Uninitialized)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+MonobitEngine.NetworkingPeer:Awake()
+UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+UnityEngine.GameObject:AddComponent(Type) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:381)
+UnityEngine.GameObject:AddComponent() (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:386)
+b.bR:C(String)
+b.bj:A()
+b.bj:.cctor()
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineGameObjectBindings.gen.cs Line: 381)
 
 Change NetworkingPeer.State => After  (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+MonobitEngine.NetworkingPeer:Awake()
+UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+UnityEngine.GameObject:AddComponent(Type) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:381)
+UnityEngine.GameObject:AddComponent() (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:386)
+b.bR:C(String)
+b.bj:A()
+b.bj:.cctor()
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineGameObjectBindings.gen.cs Line: 381)
 
+System memory in use before: 72.1 MB.
+System memory in use after: 72.1 MB.
 
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 562.
-Total: 1.149536 ms (FindLiveObjects: 0.129327 ms CreateObjectMapping: 0.049683 ms MarkObjects: 0.922359 ms  DeleteObjects: 0.046269 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 0.366931 ms (FindLiveObjects: 0.031288 ms CreateObjectMapping: 0.025031 ms MarkObjects: 0.292976 ms  DeleteObjects: 0.016782 ms)
 
 Change NetworkingPeer.State => Before (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
 
 Change NetworkingPeer.State => After  (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
 
 Change NetworkingPeer.State => Before (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.av:A(az, String, UInt16, String, String, String)
+b.bP:A(az, String, UInt16, String, String, String)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.av:A(az, String, UInt16, String, String, String)
+b.bP:A(az, String, UInt16, String, String, String)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Change NetworkingPeer.State => Before (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Change NetworkingPeer.State => After  (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 15.730563 ms
+System memory in use before: 72.0 MB.
+System memory in use after: 72.0 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 568.
+Total: 0.813507 ms (FindLiveObjects: 0.073670 ms CreateObjectMapping: 0.093297 ms MarkObjects: 0.615535 ms  DeleteObjects: 0.025884 ms)
+
+Change NetworkingPeer.State => Before (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:L()
+a.aY:A(UInt64, BR)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Change NetworkingPeer.State => After  (ConnectedToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:L()
+a.aY:A(UInt64, BR)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Change NetworkingPeer.State => Before (ConnectedToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bt)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Change NetworkingPeer.State => After  (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bt)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+NetworkingPeer.LeaveRoom()
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+MonobitEngineBase.MonobitNetwork:LeaveRoom()
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:79)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 79)
+
+Change NetworkingPeer.State => Before (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, BX)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (LeavingRoom)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, BX)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (LeavingRoom)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+b.bR:M()
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, BX)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (LeavedRoom)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+b.bR:M()
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, BX)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (LeavedRoom)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bt)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bt)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.440318 ms
+System memory in use before: 72.1 MB.
+System memory in use after: 72.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 605.
+Total: 0.418700 ms (FindLiveObjects: 0.035270 ms CreateObjectMapping: 0.027022 ms MarkObjects: 0.344745 ms  DeleteObjects: 0.011093 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.054635 ms
+Change NetworkingPeer.State => Before (Uninitialized)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+MonobitEngine.NetworkingPeer:Awake()
+UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+UnityEngine.GameObject:AddComponent(Type) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:381)
+UnityEngine.GameObject:AddComponent() (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:386)
+b.bR:C(String)
+b.bj:A()
+b.bj:.cctor()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineGameObjectBindings.gen.cs Line: 381)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+MonobitEngine.NetworkingPeer:Awake()
+UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+UnityEngine.GameObject:AddComponent(Type) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:381)
+UnityEngine.GameObject:AddComponent() (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:386)
+b.bR:C(String)
+b.bj:A()
+b.bj:.cctor()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineGameObjectBindings.gen.cs Line: 381)
+
+System memory in use before: 72.1 MB.
+System memory in use after: 72.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 565.
+Total: 0.485829 ms (FindLiveObjects: 0.040390 ms CreateObjectMapping: 0.037262 ms MarkObjects: 0.384567 ms  DeleteObjects: 0.022471 ms)
+
+Change NetworkingPeer.State => Before (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Change NetworkingPeer.State => After  (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Change NetworkingPeer.State => Before (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:L()
+a.aY:A(UInt64, BR)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (ConnectedToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:L()
+a.aY:A(UInt64, BR)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (ConnectedToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bv)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bv)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.734246 ms
+UnloadTime: 0.895427 ms
+System memory in use before: 72.9 MB.
+System memory in use after: 72.9 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 699.
-Total: 0.603402 ms (FindLiveObjects: 0.047028 ms CreateObjectMapping: 0.040201 ms MarkObjects: 0.501002 ms  DeleteObjects: 0.014791 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 0.577988 ms (FindLiveObjects: 0.034702 ms CreateObjectMapping: 0.026168 ms MarkObjects: 0.500051 ms  DeleteObjects: 0.016497 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.766290 ms
+System memory in use before: 72.9 MB.
+System memory in use after: 73.0 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 702.
+Total: 0.542717 ms (FindLiveObjects: 0.056319 ms CreateObjectMapping: 0.021333 ms MarkObjects: 0.447144 ms  DeleteObjects: 0.016782 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.583211 ms
+System memory in use before: 73.7 MB.
+System memory in use after: 73.7 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 574.
+Total: 1.094821 ms (FindLiveObjects: 0.058026 ms CreateObjectMapping: 0.042950 ms MarkObjects: 0.738699 ms  DeleteObjects: 0.253154 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.740223 ms
+System memory in use before: 73.7 MB.
+System memory in use after: 73.7 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 574.
+Total: 1.163941 ms (FindLiveObjects: 0.071395 ms CreateObjectMapping: 0.062293 ms MarkObjects: 0.854183 ms  DeleteObjects: 0.174932 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.410736 ms
+System memory in use before: 91.0 MB.
+System memory in use after: 90.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 840.
+Total: 1.046466 ms (FindLiveObjects: 0.050346 ms CreateObjectMapping: 0.034986 ms MarkObjects: 0.616672 ms  DeleteObjects: 0.343607 ms)
+
+UnloadTime: 0.452549 ms
+System memory in use before: 91.0 MB.
+System memory in use after: 90.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 840.
+Total: 0.832849 ms (FindLiveObjects: 0.038684 ms CreateObjectMapping: 0.030150 ms MarkObjects: 0.480993 ms  DeleteObjects: 0.282452 ms)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+GameMgr:RecvLoadResultScene() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\GameMgr.cs:365)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.Reflection.MethodBase:Invoke(Object, Object[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:115)
+Monobit.Utl:InvokeMethod(Object, MethodInfo, Object[])
+Monobit.bY:A(String, Object[])
+Monobit.RPC:Recv(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, MonobitTargets, Object[])
+b.bR:A(Byte, Object[])
+b.bR:A(MonobitView, String, MonobitTargets, Boolean, Object[])
+MonobitEngineBase.MonobitNetwork:RPC(MonobitView, String, MonobitTargets, Boolean, Object[])
+MonobitEngineBase.MonobitView:RPC(String, MonobitTargets, Object[])
+<LoadResult>c__Iterator10:MoveNext() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\GameMgr.cs:475)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+0
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+GameMgr:RecvLoadResultScene() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\GameMgr.cs:365)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.Reflection.MethodBase:Invoke(Object, Object[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:115)
+Monobit.Utl:InvokeMethod(Object, MethodInfo, Object[])
+Monobit.bY:A(String, Object[])
+Monobit.RPC:Recv(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, MonobitTargets, Object[])
+b.bR:A(Byte, Object[])
+a.aY:A(UInt64, bG)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.258376 ms
+System memory in use before: 93.1 MB.
+System memory in use after: 86.5 MB.
+
+Unloading 150 unused Assets to reduce memory usage. Loaded Objects now: 1374.
+Total: 2.741463 ms (FindLiveObjects: 0.071964 ms CreateObjectMapping: 0.058595 ms MarkObjects: 0.762307 ms  DeleteObjects: 1.847743 ms)
+
+初期化開始
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ResultManager:InitUI(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:94)
+ResultManager:Start() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:68)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ResultManager.cs Line: 94)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.539975 ms
+System memory in use before: 93.2 MB.
+System memory in use after: 86.5 MB.
+
+Unloading 150 unused Assets to reduce memory usage. Loaded Objects now: 1374.
+Total: 4.228248 ms (FindLiveObjects: 0.082488 ms CreateObjectMapping: 0.079359 ms MarkObjects: 0.909649 ms  DeleteObjects: 3.155897 ms)
+
+初期化開始
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ResultManager:InitUI(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:94)
+ResultManager:Start() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:68)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ResultManager.cs Line: 94)
+
+初期化終了
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ResultManager:InitUI(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:164)
+ResultManager:Start() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:68)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ResultManager.cs Line: 164)
 
 Change NetworkingPeer.State => Before (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.at:b()
+b.bP:o()
+MonobitEngine.MunPeer:OnDestroy()
+MonobitEngine.NetworkingPeer:OnDestroy()
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 
 Change NetworkingPeer.State => After  (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.at:b()
+b.bP:o()
+MonobitEngine.MunPeer:OnDestroy()
+MonobitEngine.NetworkingPeer:OnDestroy()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.at:b()
+b.bP:o()
+MonobitEngine.MunPeer:OnDestroy()
+MonobitEngine.NetworkingPeer:OnDestroy()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.at:b()
+b.bP:o()
+MonobitEngine.MunPeer:OnDestroy()
+MonobitEngine.NetworkingPeer:OnDestroy()
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
 

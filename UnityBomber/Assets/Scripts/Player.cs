@@ -202,9 +202,6 @@ public class Player : Origin{
 
         // 爆発エフェクトに触れたら倒れる
         if(col.tag == EXPLOSION_TAG && m_deathFlag == false) {
-
-            // デバッグ用
-            print("Col");
             
             // ダウンアニメーション
             Animator.SetBool("Down", true);
@@ -306,6 +303,7 @@ public class Player : Origin{
 
         m_gamemgr.m_plrStock[id]--;
         m_gamemgr.m_bUpdateUI = true;
+        m_gamemgr.m_bUpdatePlayerData = true;
         if (m_gamemgr.m_plrStock[id] < 1) {
             m_gamemgr.m_dieFlag[id] = true;
         }

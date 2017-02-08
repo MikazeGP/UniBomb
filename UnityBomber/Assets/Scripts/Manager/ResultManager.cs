@@ -7,13 +7,6 @@ using UnityEngine.UI;
 /// </summary>
 public class ResultManager : Origin {
 
-    private enum GAME_STATE : int {
-
-        INIT = 0,
-        UPDATE,
-        FINISH
-    };
-
     //========================================================
     // 定数
     //========================================================
@@ -69,6 +62,7 @@ public class ResultManager : Origin {
         m_maxPlayer = GrobalData.Instance._plrCount;
         m_winFlag = GrobalData.Instance._plrWinFlag[PlayerId];
 
+        AudioManager.Instance.PlayBGM(AUDIO.BGM_RESULT);
         m_rematchFlag = new bool[] { false,false,false,false};
         //UIの初期化
         InitUI(m_maxPlayer);
@@ -97,7 +91,7 @@ public class ResultManager : Origin {
     /// </summary>
     /// <param name="maxPlayer"> プレイヤー数</param>
     void InitUI(int maxPlayer) {
-
+        Debug.Log("初期化開始");
         //========================================================
         // プレイヤーUIの初期化
         //========================================================
@@ -167,6 +161,7 @@ public class ResultManager : Origin {
         //========================================================
         // タイマーUIの初期化はここまで
         //========================================================
+        Debug.Log("初期化終了");
     }
     /// <summary>
     /// UIの更新
