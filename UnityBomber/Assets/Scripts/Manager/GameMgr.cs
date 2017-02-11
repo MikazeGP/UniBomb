@@ -366,7 +366,7 @@ public class GameMgr : Origin {
         }
 
         // リザルト画面に移動
-        FadeManager.Instance.MonobitLoadLevel(RESULT_SCENE, 1.0f);
+        FadeManager.Instance.MonobitLoadLevel(RESULT_SCENE, 2.0f);
     }
     //========================================================
     // UPC処理はここまで
