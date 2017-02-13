@@ -21,7 +21,7 @@ public class ChatScript : Origin{
     private string chatWord = "";
 
     /** チャット発言ログ. */
-    List<string> chatLog = new List<string>();
+    public List<string> chatLog = new List<string>();
 
     /**
      * RPC 受信関数.

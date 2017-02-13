@@ -10,62 +10,45 @@ public class ResultManager : Origin {
     //========================================================
     // 定数
     //========================================================
-    // 選択時間
-    private const int LIMIT_TIME = 10;
     // コルーチン
-    private const string WAIT_TIME_COROUTINE = "WaitTime";
+    //private const string
+    // 順位
+    private const int RANK1 = 1;
+    private const int RANK2 = 2;
+    private const int RANK3 = 3;
+    private const int RANK4 = 4;
 
     //========================================================
     // UI関連
     //========================================================
-    // 各プレイヤーの顔UI
-    public Image[] m_plrFaceUI;
+    // プレイヤーUIオブジェクト
+    public GameObject[] m_playerUIObject;
 
-    // キャラクターの顔のスプライト
-    // ユニティちゃん
-    public Sprite m_utcFaceG_UI, m_utcFaceB_UI;
-    // ミサキ
-    public Sprite m_misakiFaceG_UI, m_misakiFaceB_UI;
-    // ユウコ
-    public Sprite m_yukoFaceG_UI, m_yukoFaceB_UI;
+    // プレイヤー名UIテキスト
+    public Text[] m_playerNameTextUI;
+    // プレイヤーキルテキスト
+    public Text[] m_playerKillTextUI;
+    // プレイヤーデステキスト
+    public Text[] m_playerDeathTextUI;
+    // プレイヤー順位テキスト
+    public Text[] m_playerRankTextUI;
 
-    // 各プレイヤー名UI
-    public Text[] m_plrNameUI;
-    // 再戦UI
-    public GameObject m_rematchUI;
-    // タイマーUI
-    public Text m_timerUI;
     //========================================================
     // リテラル
     //========================================================
-    // 各プレイヤーの名前
-    private string[] m_plrName;
-    // 各プレイヤーの使用キャラ名
-    private string[] m_useCharaName;
     // プレイヤー数
-    public int m_maxPlayer;
-    // 勝利フラグ
-    public bool m_winFlag;
-    // 再戦フラグ
-    public bool[] m_rematchFlag;
-    // タイマー
-    private Timer m_timer = new Timer();
-
+    private int m_maxPlayer;
+    // プレイヤー名
+    private string[] m_playerName;
+    // プレイヤーキル数
+    private int[] m_playerKill;
+    // プレイヤーデス数
+    private int[] m_playerDeath;
     //========================================================
     // 初期化処理
     //========================================================
     void Start(){
 
-        // グローバルデータから各プレイヤーの情報を取得
-        m_plrName = GrobalData.Instance._plrName;
-        m_useCharaName = GrobalData.Instance._useCharaName;
-        m_maxPlayer = GrobalData.Instance._plrCount;
-        m_winFlag = GrobalData.Instance._plrWinFlag[PlayerId];
-
-        AudioManager.Instance.PlayBGM(AUDIO.BGM_RESULT);
-        m_rematchFlag = new bool[] { false,false,false,false};
-        //UIの初期化
-        InitUI(m_maxPlayer);
     }
     //========================================================
     // 初期化処理はここまで
@@ -76,8 +59,7 @@ public class ResultManager : Origin {
     //========================================================
     void Update(){
 
-        // UIの更新
-        UpdateUI();
+        
     }
     //========================================================
     // 更新処理はここまで
@@ -95,45 +77,7 @@ public class ResultManager : Origin {
         //========================================================
         // プレイヤーUIの初期化
         //========================================================
-        for (int i = 0; i < maxPlayer; i++) {
-
-            switch (m_useCharaName[i]){
-
-                // ユニティちゃん
-                case "UnityChan":
-                    if (m_winFlag) { m_plrFaceUI[i].sprite = m_utcFaceG_UI;  return; }
-                    m_plrFaceUI[i].sprite = m_utcFaceB_UI; 
-                    break;
-                // ミサキ
-                case "Misaki":
-                    if (m_winFlag) { m_plrFaceUI[i].sprite = m_misakiFaceG_UI; return; }
-                    m_plrFaceUI[i].sprite = m_misakiFaceB_UI;
-                    break;
-                // ユウコ
-                case "Yuko":
-                    if (m_winFlag) { m_plrFaceUI[i].sprite = m_yukoFaceG_UI; return; }
-                    m_plrFaceUI[i].sprite = m_yukoFaceB_UI;
-                    break;
-                default:
-                    break;
-            }
-
-            // もし名前がなければ
-            if (m_plrName[i] == ""){
-
-                // プレイヤー(i+1)と表示する
-                int j = i + 1;
-                m_plrNameUI[i].text = "<b>Player" + j + "</b>";
-
-            }else {
-
-                // 名前をそのまま表示する
-                m_plrNameUI[i].text = "<b>" + m_plrName[i] + "</b>";
-            }
-            //UIを Active にする
-            m_plrFaceUI[i].color = Color.white;
-            m_plrNameUI[i].color = new Color(1.0f, 0.4f, 0.1f, 1.0f);
-        }
+        
         //========================================================
         // プレイヤーUIの初期化はここまで
         //========================================================
@@ -142,8 +86,7 @@ public class ResultManager : Origin {
         // 再戦UIの初期化
         //========================================================
         
-        // 非表示にする
-        m_rematchUI.SetActive(false);
+        
 
         //========================================================
         // 再戦UIの初期化ここまで
@@ -152,12 +95,7 @@ public class ResultManager : Origin {
         //========================================================
         // タイマーUIの初期化
         //========================================================
-        // 制限時間を設定
-        m_timer.LimitTime = LIMIT_TIME;
-
-        m_timer.IsEnable = false;
-
-        StartCoroutine(WAIT_TIME_COROUTINE);
+        
         //========================================================
         // タイマーUIの初期化はここまで
         //========================================================
@@ -168,38 +106,6 @@ public class ResultManager : Origin {
     /// </summary>
     void UpdateUI() {
 
-        if (m_timer.Update()){
-
-        }
-
-        // タイマーの更新
-        UpdateTimer();
-
-    }
-
-    /// <summary>
-    /// タイマーの更新
-    /// </summary>
-    void UpdateTimer(){
-
-        //分と秒を設定 
-        int second = (int)m_timer.RemainingTime % 60;
-
-        // タイマーテキストに設定
-        m_timerUI.text = "<b>" + second+ "</b>";
-    }
-    /// <summary>
-    /// 3秒待つ
-    /// </summary>
-    /// <returns></returns>
-    IEnumerator WaitTime() {
-
-        yield return new WaitForSeconds(3.0f);
-
-        //表示にする
-        m_rematchUI.SetActive(true);
-        // タイマーを起動
-        m_timer.IsEnable = true;
     }
 
     //========================================================

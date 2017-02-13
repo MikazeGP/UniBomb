@@ -129,9 +129,12 @@
     <Compile Include="Assets\Scripts\Effect.cs" />
     <Compile Include="Assets\Scripts\GrobalData.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\ItemType.cs" />
     <Compile Include="Assets\Scripts\Manager\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Manager\CharaSelectManager.cs" />
     <Compile Include="Assets\Scripts\Manager\ChatScript.cs" />
+    <Compile Include="Assets\Scripts\Manager\FixedPhrase.cs" />
+    <Compile Include="Assets\Scripts\Manager\FixedPhraseManager.cs" />
     <Compile Include="Assets\Scripts\Manager\GameMgr.cs" />
     <Compile Include="Assets\Scripts\Manager\LoadManager.cs" />
     <Compile Include="Assets\Scripts\Manager\ModeSelectManager.cs" />
