@@ -146,6 +146,7 @@
     <Compile Include="Assets\Scripts\NetworkControl.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\RandomBG.cs" />
+    <Compile Include="Assets\Scripts\SetFace.cs" />
     <Compile Include="Assets\Scripts\Util\Invincible.cs" />
     <Compile Include="Assets\Scripts\Util\Origin.cs" />
     <Compile Include="Assets\Scripts\Util\OriginMgr.cs" />

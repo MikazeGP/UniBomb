@@ -93,7 +93,7 @@ public class FixedPhraseManager : Origin {
                 result = new Greeting11();
                 break;
             case 11:
-                result = new Aori();
+                result = new Voice();
                 break;
             default:
                 break;

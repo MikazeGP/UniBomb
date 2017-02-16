@@ -50,7 +50,7 @@ public class ChatScript : Origin{
 
         // キャラクターセレクトに移動
         FadeManager.Instance.MonobitLoadLevel(CHARA_SELECT_SCENE, 2.5f);
-        
+
     }
 
     /**
