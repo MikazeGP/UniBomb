@@ -4,7 +4,9 @@ using MonobitEngine;
 
 public class Origin : MonobitEngine.MonoBehaviour {
 
-
+    //========================================================
+    // 定数
+    //========================================================
     // インプット
     public const string AXIS_HORIZONTAL = "Horizontal";
     public const string AXIS_VERTICAL = "Vertical";
@@ -26,6 +28,17 @@ public class Origin : MonobitEngine.MonoBehaviour {
     //　タグ
     public const string BOMB_TAG = "Bomb";
     public const string EXPLOSION_TAG = "Explosion";
+    public const string PLAYER_TAG = "Player";
+
+    // カラー
+    // 透明
+    public Color TRANSPARENT_COLOR = new Color(1, 1, 1, 0);
+    // 不透明
+    public Color OPAQUE_COLOR = new Color(1, 1, 1, 1);
+
+    //========================================================
+    // 定数はここまで
+    //========================================================
 
     /// プレハブ取得.
     /// プレハブは必ず"Resources/Prefabs/"に配置すること.

@@ -1,2 +1,2 @@
-There should be 'UnityBomber_Data'
+There should be 'UnityBomber_ver1.87Beta_Data'
 folder next to the executable

@@ -19,7 +19,7 @@ public class Player : Origin{
     private const string RPC_RECV_DIE = "RecvDie";
     // ボム生成受信処理名
     private const string RPC_RECV_SHOTBOMB = "RecShotBomb";
-    
+
 
     //========================================================
     // リテラル
@@ -47,7 +47,8 @@ public class Player : Origin{
     private int m_plrStock;
     // ゲームマネージャー
     private GameMgr m_gamemgr;
-
+    // キル数
+    public int m_killScore;
     //========================================================
     // 初期化処理
     //========================================================
@@ -58,6 +59,9 @@ public class Player : Origin{
 
         // 最初は生きているので false にする
         m_deathFlag = false;
+
+        // 最初は0
+        m_killScore = 0;
 
         // ゲームマネージャーをシーンから探す
         m_gamemgr = GameObject.Find(GAME_MGR).GetComponent<GameMgr>();
@@ -202,7 +206,12 @@ public class Player : Origin{
 
         // 爆発エフェクトに触れたら倒れる
         if(col.tag == EXPLOSION_TAG && m_deathFlag == false) {
-            
+
+            if (!monobitView.isMine){
+
+                return;
+            }
+
             // ダウンアニメーション
             Animator.SetBool("Down", true);
 
@@ -304,10 +313,12 @@ public class Player : Origin{
         m_gamemgr.m_plrStock[id]--;
         m_gamemgr.m_bUpdateUI = true;
         m_gamemgr.m_bUpdatePlayerData = true;
+        m_gamemgr.m_plrDeath[id]++;
         if (m_gamemgr.m_plrStock[id] < 1) {
             m_gamemgr.m_dieFlag[id] = true;
         }
     }
+
     //========================================================
     // UPC処理はここまで 
     //========================================================

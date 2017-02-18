@@ -1,0 +1,705 @@
+Mono path[0] = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.87Beta_Data/Managed'
+Mono path[1] = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.87Beta_Data/Mono'
+Mono config path = 'D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.87Beta_Data/Mono/etc'
+PlayerConnection initialized from D:/game/GitHub/UniBomb/UnityBomber/UnityBomber_ver1.87Beta_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55235
+Multi-casting "[IP] 192.168.11.2 [Port] 55235 [Flags] 3 [Guid] 60365151 [EditorId] 1380304504 [Version] 1048832 [Id] WindowsPlayer(Keishi-PC) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.11.2:55235]...
+PlayerConnection accepted from [192.168.11.2] handle:0x300
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56151
+PlayerConnection already initialized - listening to [192.168.11.2:55235]
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Vendor:   NVIDIA
+    VRAM:     4058 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\LZ4s.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\LZ4s.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\ExtDLL.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\ExtDLL.dll into Unity Child Domain
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\MLNClient.dll (this message is harmless)
+Loading D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\MLNClient.dll into Unity Child Domain
+- Completed reload, in  0.049 seconds
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\game\GitHub\UniBomb\UnityBomber\UnityBomber_ver1.87Beta_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.843089 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 58b8 -> priority: 1 
+  Thread -> id: 908a4 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.443390 ms
+System memory in use before: 73.7 MB.
+System memory in use after: 73.7 MB.
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 555.
+Total: 0.254576 ms (FindLiveObjects: 0.026737 ms CreateObjectMapping: 0.017635 ms MarkObjects: 0.200248 ms  DeleteObjects: 0.007964 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.435482 ms
+System memory in use before: 73.8 MB.
+System memory in use after: 73.8 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 592.
+Total: 0.316585 ms (FindLiveObjects: 0.029297 ms CreateObjectMapping: 0.012515 ms MarkObjects: 0.264247 ms  DeleteObjects: 0.009671 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.862716 ms
+Change NetworkingPeer.State => Before (Uninitialized)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+MonobitEngine.NetworkingPeer:Awake()
+UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+UnityEngine.GameObject:AddComponent(Type) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:381)
+UnityEngine.GameObject:AddComponent() (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:386)
+b.bR:C(String)
+b.bj:A()
+b.bj:.cctor()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineGameObjectBindings.gen.cs Line: 381)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+MonobitEngine.NetworkingPeer:Awake()
+UnityEngine.GameObject:Internal_AddComponentWithType(Type)
+UnityEngine.GameObject:AddComponent(Type) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:381)
+UnityEngine.GameObject:AddComponent() (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineGameObjectBindings.gen.cs:386)
+b.bR:C(String)
+b.bj:A()
+b.bj:.cctor()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineGameObjectBindings.gen.cs Line: 381)
+
+System memory in use before: 73.9 MB.
+System memory in use after: 73.9 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 669.
+Total: 0.330807 ms (FindLiveObjects: 0.023039 ms CreateObjectMapping: 0.012515 ms MarkObjects: 0.282167 ms  DeleteObjects: 0.012799 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.815783 ms
+System memory in use before: 73.9 MB.
+System memory in use after: 73.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 672.
+Total: 0.386558 ms (FindLiveObjects: 0.035270 ms CreateObjectMapping: 0.013084 ms MarkObjects: 0.325971 ms  DeleteObjects: 0.011662 ms)
+
+Change NetworkingPeer.State => Before (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Change NetworkingPeer.State => After  (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(String, UInt16, ServerConnection)
+b.bj:A(String, String, UInt16, String, ServerConnection)
+b.bj:b(String)
+b.bj:B(String)
+b.bj:A(String)
+MonobitEngineBase.MonobitNetwork:ConnectServer(String)
+ChatScript:OnGUI() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ChatScript.cs:190)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ChatScript.cs Line: 190)
+
+Change NetworkingPeer.State => Before (ConnectingToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:L()
+a.aY:A(UInt64, BR)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (ConnectedToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:L()
+a.aY:A(UInt64, BR)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => Before (ConnectedToTestServer)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bv)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:a(OperationResponse)
+b.bR:A(OperationResponse)
+a.aY:A(UInt64, Bv)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.731303 ms
+System memory in use before: 74.8 MB.
+System memory in use after: 74.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 689.
+Total: 0.580548 ms (FindLiveObjects: 0.040106 ms CreateObjectMapping: 0.018773 ms MarkObjects: 0.506593 ms  DeleteObjects: 0.014222 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.775107 ms
+System memory in use before: 75.5 MB.
+System memory in use after: 75.5 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 561.
+Total: 0.452264 ms (FindLiveObjects: 0.034702 ms CreateObjectMapping: 0.021902 ms MarkObjects: 0.358114 ms  DeleteObjects: 0.036693 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.421260 ms
+System memory in use before: 93.8 MB.
+System memory in use after: 93.8 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 827.
+Total: 0.825169 ms (FindLiveObjects: 0.041528 ms CreateObjectMapping: 0.023608 ms MarkObjects: 0.523944 ms  DeleteObjects: 0.234950 ms)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Timer:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Util\Timer.cs:82)
+Bomb:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:29)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Timer:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Util\Timer.cs:82)
+Bomb:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:29)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:60)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:60)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+死亡処理受信
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Effect:RecvKillScore(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:163)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.Reflection.MethodBase:Invoke(Object, Object[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:115)
+Monobit.Utl:InvokeMethod(Object, MethodInfo, Object[])
+Monobit.bY:A(String, Object[])
+Monobit.RPC:Recv(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, MonobitTargets, Object[])
+b.bR:A(Byte, Object[])
+a.aY:A(UInt64, bG)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+OnMonobitInstantiate : creator name = 1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bR:A(MessageData)
+a.aY:A(UInt64, bG)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+OnMonobitInstantiate : creator name = 1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bR:A(MessageData)
+a.aY:A(UInt64, bG)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+死亡処理受信
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Effect:RecvKillScore(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:163)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.Reflection.MethodBase:Invoke(Object, Object[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:115)
+Monobit.Utl:InvokeMethod(Object, MethodInfo, Object[])
+Monobit.bY:A(String, Object[])
+Monobit.RPC:Recv(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, MonobitTargets, Object[])
+b.bR:A(Byte, Object[])
+b.bR:A(MonobitView, String, MonobitTargets, Boolean, Object[])
+MonobitEngineBase.MonobitNetwork:RPC(MonobitView, String, MonobitTargets, Boolean, Object[])
+MonobitEngineBase.MonobitView:RPC(String, MonobitTargets, Object[])
+Effect:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:78)
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+すでに死んでる
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Effect:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:72)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Timer:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Util\Timer.cs:82)
+Bomb:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:29)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+死亡処理受信
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Effect:RecvKillScore(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:163)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.Reflection.MethodBase:Invoke(Object, Object[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:115)
+Monobit.Utl:InvokeMethod(Object, MethodInfo, Object[])
+Monobit.bY:A(String, Object[])
+Monobit.RPC:Recv(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, MonobitTargets, Object[])
+b.bR:A(Byte, Object[])
+a.aY:A(UInt64, bG)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Timer:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Util\Timer.cs:82)
+Bomb:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:29)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Timer:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Util\Timer.cs:82)
+Bomb:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:29)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Timer:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Util\Timer.cs:82)
+Bomb:Update() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:29)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:60)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+衝突したring1(Clone)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:55)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineMonoBehaviourBindings.gen.cs Line: 107)
+
+OnMonobitInstantiate : creator name = 2
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Effect:OnMonobitInstantiate(MonobitMessageInfo) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:172)
+UnityEngine.GameObject:SendMessage(String, Object, SendMessageOptions)
+b.bR:A(Hashtable, MonobitPlayer, GameObject)
+b.bj:A(String, Vector3, Quaternion, Int32, Object[], Boolean)
+MonobitEngineBase.MonobitNetwork:Instantiate(String, Vector3, Quaternion, Int32, Object[])
+Bomb:Explosion() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:42)
+Bomb:OnTriggerEnter(Collider) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Bomb.cs:60)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Effect.cs Line: 172)
+
+死亡処理受信
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+Effect:RecvKillScore(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Effect.cs:163)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.Reflection.MethodBase:Invoke(Object, Object[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:115)
+Monobit.Utl:InvokeMethod(Object, MethodInfo, Object[])
+Monobit.bY:A(String, Object[])
+Monobit.RPC:Recv(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, MonobitTargets, Object[])
+b.bR:A(Byte, Object[])
+a.aY:A(UInt64, bG)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+1
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\UnityEngineMonoBehaviourBindings.gen.cs:107)
+GameMgr:RecvLoadResultScene() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\GameMgr.cs:367)
+System.Reflection.MonoMethod:InternalInvoke(Object, Object[], Exception&)
+System.Reflection.MonoMethod:Invoke(Object, BindingFlags, Binder, Object[], CultureInfo) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222)
+System.Reflection.MethodBase:Invoke(Object, Object[]) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:115)
+Monobit.Utl:InvokeMethod(Object, MethodInfo, Object[])
+Monobit.bY:A(String, Object[])
+Monobit.RPC:Recv(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, Object[])
+MonobitEngineBase.MonobitView:OnRPC(String, MonobitTargets, Object[])
+b.bR:A(Byte, Object[])
+a.aY:A(UInt64, bG)
+a.aY:A(UInt64, UInt32, UInt16, am)
+a.aY:A(am, UInt32, UInt32, UInt16, UInt64)
+A.z:A(am, UInt32, UInt32, UInt16, UInt64, UInt64)
+A.z:A(o)
+A.q:b(o)
+A.q:D()
+A.q:c()
+A.t:A()
+a.at:C()
+MonobitEngine.MunPeer:Update()
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs Line: 222)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.131799 ms
+System memory in use before: 96.4 MB.
+System memory in use after: 89.6 MB.
+
+Unloading 150 unused Assets to reduce memory usage. Loaded Objects now: 1569.
+Total: 2.252790 ms (FindLiveObjects: 0.073101 ms CreateObjectMapping: 0.033279 ms MarkObjects: 0.681525 ms  DeleteObjects: 1.463460 ms)
+
+初期化開始
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ResultManager:InitUI(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:115)
+ResultManager:Start() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:88)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ResultManager.cs Line: 115)
+
+初期化終了
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+ResultManager:InitUI(Int32) (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:163)
+ResultManager:Start() (at D:\game\GitHub\UniBomb\UnityBomber\Assets\Scripts\Manager\ResultManager.cs:88)
+ 
+(Filename: D:/game/GitHub/UniBomb/UnityBomber/Assets/Scripts/Manager/ResultManager.cs Line: 163)
+
+Change NetworkingPeer.State => Before (Joined)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.at:b()
+b.bP:o()
+MonobitEngine.MunPeer:OnDestroy()
+MonobitEngine.NetworkingPeer:OnDestroy()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Change NetworkingPeer.State => After  (PeerCreated)
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+b.bR:A(PeerState)
+b.bR:A(StatusCode)
+a.aY:I()
+a.at:b()
+b.bP:o()
+MonobitEngine.MunPeer:OnDestroy()
+MonobitEngine.NetworkingPeer:OnDestroy()
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 42)
+
+Waiting for finish

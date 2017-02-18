@@ -77,4 +77,7 @@ public class GrobalData : MonoBehaviour {
 
     // 各プレイヤーの勝利フラグ
     public bool[] _plrWinFlag = new bool[] { false, false, false, false };
+
+    // 各プレイヤーの順位
+    public int[] _plrRank = new int[] { 1, 2, 3, 4 };
 }

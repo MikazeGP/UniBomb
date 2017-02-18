@@ -108,7 +108,7 @@ public class OpsionManager : Origin {
 
             case 3:
 
-                SelectObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(-210f, -270);
+                SelectObj.GetComponent<RectTransform>().anchoredPosition = new Vector2(-230f, -270);
 
                 if (Input.GetButton(FIRE1_BUTTON)){
 

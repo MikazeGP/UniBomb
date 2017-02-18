@@ -29,11 +29,7 @@ public class GameMgr : Origin {
     // リザルトコルーチン
     private const string LOADRESULT_COROUTINE = "LoadResult";
 
-    // カラー
-    // 透明
-    private Color TRANSPARENT_COLOR = new Color(1, 1, 1, 0);
-    // 不透明
-    private Color OPAQUE_COLOR = new Color(1, 1, 1, 1);
+   
 
 
     //========================================================
@@ -94,8 +90,12 @@ public class GameMgr : Origin {
     private Timer m_timer = new Timer();
     // プレイヤー情報更新フラグ
     public bool m_bUpdatePlayerData;
-
-
+    // 各プレイヤーのキル数
+    public int[] m_plrKill;
+    // 各プレイヤーのデス数
+    public int[] m_plrDeath;
+    // 各プレイヤーの順位
+    public int[] m_plrRank;
     //========================================================
     // 初期化処理
     //========================================================
@@ -107,7 +107,9 @@ public class GameMgr : Origin {
         m_plrBombStock = GrobalData.Instance._plrBombStock;
         m_useCharaName = GrobalData.Instance._useCharaName;
         m_maxPlayer = GrobalData.Instance._plrCount;
-
+        m_plrKill = new int[] { 0,0,0,0};
+        m_plrDeath = new int[] { 0,0,0,0};
+        m_plrRank = new int[] { 1, 2, 3, 4 };
         // フレームカウントを0にする
         FrameCount = 0;
         // 各プレイヤーの志望フラグをfalseにする
@@ -364,7 +366,10 @@ public class GameMgr : Origin {
         for(int i = 0 ; i < m_maxPlayer; i++) {
             if(m_dieFlag[i] == false) { GrobalData.Instance._plrWinFlag[i] = true; print(i); }
         }
-
+        // グローバルデータに保存
+        GrobalData.Instance._plrKillScore = m_plrKill;
+        GrobalData.Instance._plrDeathScore = m_plrDeath;
+        GrobalData.Instance._plrRank = m_plrRank;
         // リザルト画面に移動
         FadeManager.Instance.MonobitLoadLevel(RESULT_SCENE, 2.0f);
     }

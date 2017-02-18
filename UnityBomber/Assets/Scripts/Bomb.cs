@@ -60,28 +60,6 @@ public class Bomb : Origin {
             Explosion();
         }
     }
-    /*
-
-    // プレイヤーがボムからでたら...
-    void OnTriggerExit(Collider col) {
-
-        // トリガーが変更されていないなら...
-        if(putCollider == false) {
-
-            // ボックスのトリガーをfalseにする
-            BoxCollider.isTrigger = false;
-
-            // スフィアのトリガーをtrueにする
-            SphereColliderEnabled = true;
-
-            // トリガーを変更したのでfalseにする
-            putCollider = true;
-
-            // プレイヤーが再度ボムを発射できるようにする
-            plr.shotBomb = true;
-        }
-    }
-    */
 
     // 3病後に爆発するように設定
     void SetTimer() {

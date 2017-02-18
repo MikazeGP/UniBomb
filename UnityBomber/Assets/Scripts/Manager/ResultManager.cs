@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using MonobitEngine;
 
 /// <summary>
 /// 対戦結果を表示するクラス
@@ -10,20 +11,24 @@ public class ResultManager : Origin {
     //========================================================
     // 定数
     //========================================================
+    // RPC
+    private const string RPC_RECVGAMECONTINUE = "RecvGameContinue";
     // コルーチン
-    //private const string
-    // 順位
-    private const int RANK1 = 1;
-    private const int RANK2 = 2;
-    private const int RANK3 = 3;
-    private const int RANK4 = 4;
+    private const string COROUTINE_ACTIVE_REMATCH_OBJECT = "ActiveRematchObject";
+
+    // マーカーポジション
+    private Vector2 MARKER_POSITION0 = new Vector2(0, -335);
+    private Vector2 MARKER_POSITION1 = new Vector2(256, -335);
 
     //========================================================
     // UI関連
     //========================================================
     // プレイヤーUIオブジェクト
     public GameObject[] m_playerUIObject;
-
+    // 継続UIオブジェクト
+    public GameObject m_rematchUI;
+    // 選択マーカー
+    public GameObject m_selectMarker;
     // プレイヤー顔画像
     public Image[] m_playerFaceUI;
     // プレイヤー名UIテキスト
@@ -34,8 +39,12 @@ public class ResultManager : Origin {
     public Text[] m_playerDeathTextUI;
     // プレイヤー順位テキスト
     public Text[] m_playerRankTextUI;
-
-
+    // 待機テキスト
+    public Text m_waitTextUI;
+    // カウントダウンテキスト
+    public Text m_countDownTextUI;
+    // 各プレイヤーはキャラを決定したか true..決定済み false..選択中
+    private bool[] m_plrDecided;
     //========================================================
     // リテラル
     //========================================================
@@ -49,21 +58,33 @@ public class ResultManager : Origin {
     private int[] m_playerKill;
     // プレイヤーデス数
     private int[] m_playerDeath;
+    // プレイヤーの順位
+    private int[] m_playerRank;
+    // プレイヤーの継続フラグ
+    private bool[] m_playerGameContinue;
     // 勝利フラグ
     private bool[] m_playerWinFlag;
+    // タイマー
+    private Timer m_timer;
+    private int m_selectNum;
+    private bool m_canPush;
+
     //========================================================
     // 初期化処理
     //========================================================
     void Start(){
-
+        // グローバルデータから各プレイヤーの情報を取得
         m_maxPlayer = GrobalData.Instance._plrCount;
         m_useCharaName = GrobalData.Instance._useCharaName;
         m_playerName = GrobalData.Instance._plrName;
         m_playerKill = GrobalData.Instance._plrKillScore;
         m_playerDeath = GrobalData.Instance._plrDeathScore;
+        m_playerRank = GrobalData.Instance._plrRank;
         m_playerWinFlag = GrobalData.Instance._plrWinFlag;
-
-
+        m_playerGameContinue = new bool[] { false,false,false,false};
+        m_plrDecided = new bool[] { false, false, false, false };
+        m_canPush = false;
+        // UIの初期化
         this.InitUI(m_maxPlayer);
 
     }
@@ -76,7 +97,8 @@ public class ResultManager : Origin {
     //========================================================
     void Update(){
 
-        
+        // UIの更新
+        UpdateUI();
     }
     //========================================================
     // 更新処理はここまで
@@ -100,7 +122,10 @@ public class ResultManager : Origin {
 
             m_playerUIObject[i].SetActive(true);
             m_playerFaceUI[i].sprite = sf.SetFaceSprite(m_useCharaName[i], m_playerWinFlag[i]);
-
+            m_playerNameTextUI[i].text = m_playerName[i];
+            m_playerDeathTextUI[i].text = m_playerDeath[i].ToString();
+            m_playerKillTextUI[i].text = m_playerKill[i].ToString();
+            m_playerRankTextUI[i].text = m_playerRank[i].ToString();
         }
 
         //========================================================
@@ -110,9 +135,11 @@ public class ResultManager : Origin {
         //========================================================
         // 再戦UIの初期化
         //========================================================
-        
-        
-
+        // 非表示にする
+        m_rematchUI.SetActive(false);
+        m_waitTextUI.color = TRANSPARENT_COLOR;
+        m_countDownTextUI.color = TRANSPARENT_COLOR;
+        m_selectMarker.SetActive(false);
         //========================================================
         // 再戦UIの初期化ここまで
         //========================================================
@@ -120,10 +147,19 @@ public class ResultManager : Origin {
         //========================================================
         // タイマーUIの初期化
         //========================================================
-        
+        m_timer = new Timer();
+        // 時間を設定
+        m_timer.LimitTime = 10;
+        // 終了処理を設定
+        //m_timer.FireDelegate =
+        // まだ更新しない
+        m_timer.IsEnable = false;
+
         //========================================================
         // タイマーUIの初期化はここまで
         //========================================================
+        StartCoroutine(COROUTINE_ACTIVE_REMATCH_OBJECT);
+
         Debug.Log("初期化終了");
     }
     /// <summary>
@@ -131,9 +167,151 @@ public class ResultManager : Origin {
     /// </summary>
     void UpdateUI() {
 
+        // タイマークラスの更新
+        if (m_timer.Update()){
+
+        }
+        // タイマーの更新
+        UpdateTimer();
+
+        // セレクトUIの更新
+        SelectUI();
+    }
+    /// <summary>
+    /// タイマーの更新
+    /// </summary>
+    void UpdateTimer() {
+        // 秒を設定
+        int second = (int)m_timer.RemainingTime % 60;
+        // タイマーテキストに設定
+         m_countDownTextUI.text = "<b>" +second.ToString("D2") + "</b>";
+    }
+    /// <summary>
+    /// セレクトUIの更新
+    /// </summary>
+    void SelectUI() {
+
+        switch (SelectNum()) {
+
+            case 0:
+                m_selectMarker.GetComponent<RectTransform>().anchoredPosition = MARKER_POSITION0;
+                if (Input.GetButtonDown(FIRE1_BUTTON)){
+                    this.GameContinue();
+                }
+                break;
+            case 1:
+                m_selectMarker.GetComponent<RectTransform>().anchoredPosition = MARKER_POSITION1;
+                if (Input.GetButtonDown(FIRE1_BUTTON)){
+                    this.GameEnd();
+                }
+                break;
+            default:
+                break;
+        }
+
+    }
+
+    // 再戦オブジェクトを表示
+    IEnumerator ActiveRematchObject() {
+        // 2秒待つ
+        yield return new WaitForSeconds(2.0f);
+        // UIを表示
+        m_rematchUI.SetActive(true);
+        m_countDownTextUI.color = OPAQUE_COLOR;
+        m_selectMarker.SetActive(true);
+        // タイマーを起動
+        m_timer.IsEnable = true;
     }
 
     //========================================================
     // UI処理はここまで
+    //========================================================
+
+    //========================================================
+    // 入力処理
+    //========================================================
+    /// <summary>
+    /// 入力処理の更新
+    /// </summary>
+    void UpdateInput() {
+       
+    }
+
+    int SelectNum() {
+
+        if (Mathf.Abs(Input.GetAxis(AXIS_HORIZONTAL)) < 0.1f){
+
+            m_canPush = true;
+        }
+        if (Mathf.Abs(Input.GetAxis(AXIS_HORIZONTAL)) > 0.2f && m_canPush) {
+
+            if (Input.GetAxis(AXIS_HORIZONTAL) > 0){
+
+                m_selectNum++;
+
+            } else{
+
+                m_selectNum--;
+            }
+
+            m_selectNum = Mathf.Clamp(m_selectNum, 0, 1);
+
+            //　ここで再生
+            AudioManager.Instance.PlaySE(AUDIO.SE_SELECT_SE);
+
+            m_canPush = false;
+
+            return m_selectNum;
+        }
+        return m_selectNum;
+    }
+
+    public void GameContinue() {
+        // SEを再生
+        AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
+        // ゲームの継続意思を送信
+        monobitView.RPC(RPC_RECVGAMECONTINUE, MonobitTargets.All, PlayerId, true);
+        // 非表示にする
+        m_rematchUI.SetActive(false);
+        m_waitTextUI.color = TRANSPARENT_COLOR;
+        m_selectMarker.SetActive(false);
+        // 表示にする
+        m_waitTextUI.color = OPAQUE_COLOR;
+        //　タイマーをストップ
+        m_timer.IsEnable = false;
+    }
+    public void GameEnd() {
+        // SEを再生
+        AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
+        // ゲームの継続意思を送信
+        monobitView.RPC(RPC_RECVGAMECONTINUE, MonobitTargets.All, PlayerId, false);
+        // 非表示にする
+        m_rematchUI.SetActive(false);
+        m_waitTextUI.color = TRANSPARENT_COLOR;
+        m_selectMarker.SetActive(false);
+        //　タイマーをストップ
+        m_timer.IsEnable = false;
+    }
+
+    //========================================================
+    // 入力処理はここまで
+    //========================================================
+
+    //========================================================
+    // UPC処理
+    //========================================================
+    [MunRPC]
+    /// <summary>
+    /// プレイヤーのゲームの継続意思
+    /// </summary>
+    /// <param name="id">プレイヤーID</param>
+    /// <param name="con">継続するかしないか</param>
+    void RecvGameContinue(int id,bool con) {
+
+        m_playerGameContinue[id] = con;
+        m_plrDecided[id] = true;
+    }
+    //========================================================
+    // UPC処理はここまで
     //========================================================
 }
