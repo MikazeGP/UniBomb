@@ -35,6 +35,7 @@ public class Origin : MonobitEngine.MonoBehaviour {
     public Color TRANSPARENT_COLOR = new Color(1, 1, 1, 0);
     // 不透明
     public Color OPAQUE_COLOR = new Color(1, 1, 1, 1);
+    
 
     //========================================================
     // 定数はここまで

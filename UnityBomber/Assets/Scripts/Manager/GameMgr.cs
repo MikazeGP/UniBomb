@@ -206,7 +206,7 @@ public class GameMgr : Origin {
         // タイマーUIの初期化
         //========================================================
         // 制限時間を設定
-        m_timer.LimitTime = LIMIT_TIME;
+        m_timer.LimitTime = 5;
         // 終了関数を設定
         m_timer.FireDelegate = Finishi;
         m_timer.IsEnable = false;
@@ -263,7 +263,7 @@ public class GameMgr : Origin {
         //分と秒を設定 
         int minute = (int)m_timer.RemainingTime / 60;
         int second = (int)m_timer.RemainingTime % 60;
-
+        
         // タイマーテキストに設定
         m_timerUI.text = "<b>" +minute.ToString("D1")+":"+second.ToString("D2")+ "</b>";
     }
@@ -355,7 +355,7 @@ public class GameMgr : Origin {
     //========================================================
 
     //========================================================
-    // UPC処理
+    // RPC処理
     //========================================================
     /// <summary>
     /// リザルトシーンを読み込む受信処理
@@ -374,7 +374,7 @@ public class GameMgr : Origin {
         FadeManager.Instance.MonobitLoadLevel(RESULT_SCENE, 2.0f);
     }
     //========================================================
-    // UPC処理はここまで
+    // RPC処理はここまで
     //========================================================
 
     //========================================================
@@ -455,6 +455,8 @@ public class GameMgr : Origin {
     void Finishi() {
 
         if(m_currentState == GAME_STATE.FINISH) { return; }
+        // タイマーを止める
+        m_timer.IsEnable = false;
         // ゲームを終了する
         m_currentState = GAME_STATE.FINISH;
         // 音を再生

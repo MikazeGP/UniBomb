@@ -106,7 +106,7 @@ public class ModeSelectManager : Origin {
                 if (Input.GetButton(FIRE1_BUTTON))
                 {
 
-                    this.LoadTitleScene();
+                    this.GameEnd();
                 }
                 break;
         }
@@ -172,10 +172,10 @@ public class ModeSelectManager : Origin {
     }
 
     // タイトルシーンをロードする
-    public void LoadTitleScene() {
+    public void GameEnd() {
 
-        
-        FadeManager.Instance.LoadLevel(TITLE_SCENE, 1.0f);
+
+        Application.Quit();
         m_stop = true;
         // SE再生
         AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);

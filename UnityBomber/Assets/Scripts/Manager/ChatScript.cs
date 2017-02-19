@@ -23,6 +23,11 @@ public class ChatScript : Origin{
     /** チャット発言ログ. */
     public List<string> chatLog = new List<string>();
 
+    void Start() {
+        // 残機の初期化
+        GrobalData.Instance._plrStock = new int[] { 3, 3, 3, 3 };
+    }
+
     /**
      * RPC 受信関数.
      */

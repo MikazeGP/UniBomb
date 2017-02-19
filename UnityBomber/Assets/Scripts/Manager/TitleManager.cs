@@ -6,7 +6,6 @@ public class TitleManager : Origin {
 
     public GameObject textObj;
     
-     
     private float nextTime;
     public float interval = 0.8f; //点滅周期
     public bool stop;
