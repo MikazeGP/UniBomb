@@ -1,114 +1,81 @@
 ﻿using UnityEngine;
 using System.Collections;
 using MonobitEngine;
+using ItemAbility;
 
-public class Item : Origin
-{
+public class Item : Origin {
 
-    enum ITEM_TYPE : int
-    {
+    enum  ITEM_TYPE {
         NONE = 0,
         BOX,
-        PARAM_UP,
-        PARAM_DOWN
-    }
-
+        UP,
+        DOWN
+    };
     //========================================================
     // 定数
     //========================================================
-    // RPC
-    private const string RPC_ITEM_ABILITY = "ItemAbility";
-
+    // アイテムの生存時間
+    private const  int LIMIT_TIME = 30;
     //========================================================
     // リテラル
     //========================================================
-    // 現在のアイテムの種類
-    ITEM_TYPE m_nowItemType;
-
-
-
+    // 現在のアイテムタイプ
+    ITEM_TYPE m_currentItemType;
+    // タイマー
+    private Timer m_timer;
+    // アイテム能力クラス
+    private ItemAbility.BaseItemAbility m_itemAbility;
     //========================================================
     // 初期化処理
     //========================================================
-    void Start(){
-
-        if(m_nowItemType == ITEM_TYPE.NONE) {
-
-        }
-
+    void Start () {
+	    
+	}
+    // タイマーの初期化
+    void InitTimer()
+    {
+        m_timer = new Timer();
+        m_timer.LimitTime = LIMIT_TIME;
+        m_timer.FireDelegate = Extinction;
+        m_timer.IsEnable = true;
     }
-
     //========================================================
     // 初期化処理はここまで
     //========================================================
 
     //========================================================
-    // 更新処理処理
+    // 更新処理
     //========================================================
-    void Update()
-    {
+    void Update () {
 
-    }
+        // タイマーの更新
+        if (m_timer.Update()) {}
+	}
+    //========================================================
+    // 更新処理はここまで
+    //========================================================
 
-    //========================================================
-    // 更新処理処理はここまで
-    //========================================================
+    // アイテムの接触処理
+    void OnTriggerEnter(Collider col) {
 
-    //========================================================
-    //　衝突判定処理
-    //========================================================
-    void OnTriggerEnter(Collider col)
-    {
+        // プレイヤーに当たった時
+        if(col.tag == PLAYER_TAG) {
+        }
+        //箱以外で 爆風に当たった時
+        if(col.tag == EXPLOSION_TAG && m_currentItemType != ITEM_TYPE.BOX) {
 
-        // 爆発エフェクトに触れたとき
-        if (col.tag == EXPLOSION_TAG && m_nowItemType == ITEM_TYPE.BOX)
-        {
-            /*
-            string itemName = RandomItemName();
+            // 消滅処理
+            Extinction();
+        }
+        // 箱で 爆風に当たった時
+        if (m_currentItemType == ITEM_TYPE.BOX) {
+
             // アイテムを出現
-            GameObject newItem = MonobitNetwork.Instantiate(itemName, new Vector3(X, Y + 0.5f, Z), Quaternion.identity, 0);
-            // アイテムの名前を変更
-            newItem.GetComponent<Item>().m_nowItemType = GetItemType(itemName);
-            // このアイテムを削除する
-            MonobitNetwork.Destroy(gameObject);
-            */
-        }
-        // プレイヤーに触れたとき
-        if (col.tag == "Player" && m_nowItemType != ITEM_TYPE.NONE)
-        {
-
-            Player plr = col.GetComponent<Player>();
-            monobitView.RPC(RPC_ITEM_ABILITY, MonobitTargets.All, plr);
-
         }
     }
-    /// <summary>
-    /// アイテム名からアイテムを設定する
-    /// </summary>
-    /// <param name="itemName">ITEM_TYPE</param>
-    /// <returns></returns>
-    ITEM_TYPE GetItemType(string itemName)
-    {
-
-        ITEM_TYPE itemType = ITEM_TYPE.NONE;
-        switch (itemName)
-        {
-
-            case "Box":
-                itemType = ITEM_TYPE.BOX;
-                break;
-            case "UpItem":
-                itemType = ITEM_TYPE.PARAM_UP;
-                break;
-
-            case "BudItem":
-                itemType = ITEM_TYPE.PARAM_DOWN;
-                break;
-            default:
-
-                break;
-        }
-        return itemType;
+    // 消滅処理
+    void Extinction() {
+        // シーンから削除する
+        MonobitNetwork.Destroy(gameObject);
     }
 }
-
