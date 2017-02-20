@@ -22,8 +22,14 @@ class NetworkControl : Origin
     // Use this for initialization
     void Start()
     {
+        if(m_gameMgr.m_useCharaName[PlayerId] != "") {
 
-        m_playerName = m_gameMgr.m_useCharaName[PlayerId];
+            m_playerName = m_gameMgr.m_useCharaName[PlayerId];
+
+        }else {
+            m_playerName = GrobalData.Instance._useCharaName[PlayerId];
+        }
+       
 
         MonobitEngine.MonobitNetwork.sendRate = 60;
         MonobitEngine.MonobitNetwork.updateStreamRate = 600;

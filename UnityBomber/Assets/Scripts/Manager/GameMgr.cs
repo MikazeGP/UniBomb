@@ -206,7 +206,7 @@ public class GameMgr : Origin {
         // タイマーUIの初期化
         //========================================================
         // 制限時間を設定
-        m_timer.LimitTime = 5;
+        m_timer.LimitTime = LIMIT_TIME;
         // 終了関数を設定
         m_timer.FireDelegate = Finishi;
         m_timer.IsEnable = false;
