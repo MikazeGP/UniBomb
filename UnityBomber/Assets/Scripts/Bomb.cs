@@ -17,9 +17,13 @@ public class Bomb : Origin {
 
         this.SetTimer();
 
-        ChangeScale(m_playerName);
-
         AudioManager.Instance.PlaySE(AUDIO.SE_PUTBOMB);
+
+        if (!monobitView.isMine){
+
+            return;
+        }
+        ChangeScale(m_playerName);
     }
 
     void Update() {
@@ -81,18 +85,18 @@ public class Bomb : Origin {
         switch (name) {
 
             case "UnityChan":
-
-                SetScale(0.5f, 0.5f, 0.5f);
+                float utc_Size = 0.5f * m_plr.m_bombPower;
+                SetScale(utc_Size, utc_Size, utc_Size);
                 break;
 
             case "Misaki":
-
-                SetScale(0.5f, 0.5f, 0.5f);
+                float misaki_Size = 0.5f * m_plr.m_bombPower;
+                SetScale(misaki_Size, misaki_Size, misaki_Size);
                 break;
 
             case "Yuko":
-
-                SetScale(0.7f, 0.7f, 0.7f);
+                float yuko_Size = 0.7f * m_plr.m_bombPower;
+                SetScale(yuko_Size, yuko_Size, yuko_Size);
                 break;
 
             default:

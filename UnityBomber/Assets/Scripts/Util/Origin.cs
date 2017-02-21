@@ -22,6 +22,8 @@ public class Origin : MonobitEngine.MonoBehaviour {
     public const string CHARA_SELECT_SCENE = "CharaSelect";
     public const string STAGE_SELECT_SCENE = "StageSelect";
     public const string STAGE1_SCENE = "Stage1";
+    public const string STAGE1_1_SCENE = "Stage1.1";
+    public const string STAGE1_2_SCENE = "Stage1.2";
     public const string STAGE2_SCENE = "Stage2";
     public const string RESULT_SCENE = "Result";
 

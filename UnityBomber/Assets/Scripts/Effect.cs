@@ -93,18 +93,18 @@ public class Effect : Origin {
         {
 
             case "UnityChan":
-
-                SetScale(1.3f, 1.3f, 1.3f);
+                float utc_Size = 1.3f * m_plr.m_bombPower;
+                SetScale(utc_Size, utc_Size, utc_Size);
                 break;
 
             case "Misaki":
-
-                SetScale(1.1f, 1.1f, 1.1f);
+                float misaki_Size = 1.1f * m_plr.m_bombPower;
+                SetScale(misaki_Size, misaki_Size, misaki_Size);
                 break;
 
             case "Yuko":
-
-                SetScale(1.7f, 1.7f, 1.7f);
+                float yuko_Size = 1.7f * m_plr.m_bombPower;
+                SetScale(yuko_Size, yuko_Size, yuko_Size);
                 break;
 
             default:

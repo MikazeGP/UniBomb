@@ -6,8 +6,9 @@ using UnityEngine.UI;
 /// モード選択を管理するクラス
 /// </summary>
 public class ModeSelectManager : Origin {
-
+    // セレクトマーカー
     public GameObject SelectMark;
+    // 各ボタン
     public Button RANDOM_BUTTON, ROOM_BUTTON,OPSION_BUTTON, BACK_BUTTON;
     private bool m_stop;
     private bool m_canPush;
@@ -18,6 +19,7 @@ public class ModeSelectManager : Origin {
 	void Start () {
 
         AudioManager.Instance.PlayBGM(AUDIO.BGM_SELECT_BGM, AudioManager.BGM_FADE_SPEED_RATE_HIGH);
+        // UIの初期化
         SelectMark.GetComponent<RectTransform>().anchoredPosition = new Vector2(-395f, 460f);
         RANDOM_BUTTON.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 480);
         ROOM_BUTTON.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, 370f);

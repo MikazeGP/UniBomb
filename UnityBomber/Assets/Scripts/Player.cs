@@ -20,7 +20,14 @@ public class Player : Origin{
     // ボム生成受信処理名
     private const string RPC_RECV_SHOTBOMB = "RecShotBomb";
 
+    // プレイヤーが移動できる最大位置
+    private const float EndPosxMin = -5.0f;
+    private const float EndPosxMax = 5.0f;
+    private const float EndPoszMin = -5.0f;
+    private const float EndPoszMax = 5.0f;
 
+    // ボムプレハブパス
+    private const string BOMB_PREFAB_PASS = "Prefabs/Pbomb";
     //========================================================
     // リテラル
     //========================================================
@@ -28,12 +35,8 @@ public class Player : Origin{
     public int m_stockBomb;
     // 移動速度
     public float m_moveSpeed;
-
-    // プレイヤーが移動できる最大位置
-    private float EndPosxMin = -4.8f;
-    private float EndPosxMax = 4.8f;
-    private float EndPoszMin = -4.3f;
-    private float EndPoszMax = 4.3f;
+    // ボムの火力
+    public float m_bombPower;
 
     // 初期化フラグ
     private bool m_init = false;
@@ -53,6 +56,9 @@ public class Player : Origin{
     // 初期化処理
     //========================================================
     void Start () {
+
+        // 初期の火力はそのまま
+        m_bombPower = 1.0f;
 
         // 発射可能にする
         m_shotBomb = true;
@@ -131,7 +137,7 @@ public class Player : Origin{
             if (m_shotBomb == true && m_stockBomb > 0) {
 
                 // ボムを生成
-                GameObject bombobj = MonobitEngine.MonobitNetwork.Instantiate("Prefabs/Pbomb", new Vector3(X, Y + 0.2f, Z), Quaternion.identity, 0, null);
+                GameObject bombobj = MonobitNetwork.Instantiate(BOMB_PREFAB_PASS, new Vector3(X, Y + 0.2f, Z), Quaternion.identity, 0, null);
 
                 // ボムを置けなくする
                 m_shotBomb = false;
