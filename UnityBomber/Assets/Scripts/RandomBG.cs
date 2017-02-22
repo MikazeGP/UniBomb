@@ -30,7 +30,7 @@ public class RandomBG : Origin {
         // Resourcesからスプライトを読み込む
         m_bgSprite = Resources.LoadAll<Sprite>(SPRITE_FILE_PASS);
         // 1~5の乱数を取得
-        m_randomInt = (int)Random.Range(0f, 100f) % 6;
+        m_randomInt = (int)Random.Range(0f, 100f) % 4;
         // BGを設定
         m_bgImage.sprite = m_bgSprite[m_randomInt];
 

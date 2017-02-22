@@ -114,6 +114,7 @@
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemAbility.cs" />
     <Compile Include="Assets\Scripts\Manager\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\BoxCreateManager.cs" />
     <Compile Include="Assets\Scripts\Manager\CharaSelectManager.cs" />
     <Compile Include="Assets\Scripts\Manager\ChatScript.cs" />
     <Compile Include="Assets\Scripts\Manager\FixedPhrase.cs" />
@@ -129,6 +130,7 @@
     <Compile Include="Assets\Scripts\NetworkControl.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\RandomBG.cs" />
+    <Compile Include="Assets\Scripts\SetBGM.cs" />
     <Compile Include="Assets\Scripts\SetFace.cs" />
     <Compile Include="Assets\Scripts\Util\Invincible.cs" />
     <Compile Include="Assets\Scripts\Util\Origin.cs" />

@@ -5,6 +5,9 @@ public static class AUDIO
 {
 	  public const string BGM_BATTLE1 = "Battle1";
 	  public const string BGM_BATTLE2 = "Battle2";
+	  public const string BGM_BATTLE3 = "Battle3";
+	  public const string BGM_BATTLE4 = "Battle4";
+	  public const string BGM_BATTLE5 = "Battle5";
 	  public const string BGM_RESULT = "Result";
 	  public const string BGM_SELECT_BGM = "Select_BGM";
 	  public const string BGM_TITLE = "Title";
@@ -22,6 +25,8 @@ public static class AUDIO
 	  public const string SE_UTC_RUPTURE = "Utc_Rupture";
 	  public const string SE_YUKO_RUPTURE = "Yuko_Rupture";
 	  public const string SE_SELECT_SE = "select_se";
+	  public const string SE_BUFF = "Buff";
+	  public const string SE_NUFF = "Nuff";
 	
 	 public const string VOICE_V0001 = "V0001";
 	 public const string VOICE_V0002 = "V0002";

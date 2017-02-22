@@ -39,7 +39,7 @@ public class Item : Origin {
     //========================================================
     void Start () {
 
-        if(m_currentItemType == ITEM_TYPE.NONE) { return; }
+        if(m_currentItemType == ITEM_TYPE.NONE || m_currentItemType == ITEM_TYPE.BOX) { return; }
         
         // タイマーの初期化
         InitTimer();
@@ -82,7 +82,7 @@ public class Item : Origin {
     //========================================================
     void Update () {
 
-        if(m_currentItemType == ITEM_TYPE.NONE) { return; }
+        if(m_currentItemType == ITEM_TYPE.NONE || m_currentItemType == ITEM_TYPE.BOX) { return; }
         // タイマーの更新
         if (m_timer.Update()) {}
 	}
@@ -97,15 +97,14 @@ public class Item : Origin {
 
         // プレイヤーに当たった時
         if (col.tag == PLAYER_TAG&& m_currentItemType != ITEM_TYPE.BOX) {
-            // オブジェクト所有権を所持しなければ実行しない
-            if (!monobitView.isMine){
-                return;
-            }
+ 
+            if (col.GetComponent<Player>() == null) { return; }
             Player m_plr = col.GetComponent<Player>();
             // アイテムの効果発動
             GetItemAbility(m_plr);
 
-            Extinction();
+            monobitView.RPC("DestoryItem", MonobitTargets.All, null);
+            //Extinction();
         }
         //箱以外で 爆風に当たった時
         if(col.tag == EXPLOSION_TAG && m_currentItemType != ITEM_TYPE.BOX) {
@@ -128,7 +127,6 @@ public class Item : Origin {
             SpawnItem();
 
             gameObject.transform.position = new Vector3(X, 100, Z);
-            //Extinction();
         }
     }
     // 消滅処理
@@ -153,9 +151,9 @@ public class Item : Origin {
         int randomInt = Random.Range(0, 10);
         Vector3 pos = new Vector3(X, Y + 0.3f, Z);
         // 4より小さいなら出現しない
-        if( randomInt < 6) { return; }
+        if( randomInt < 5) { return; }
         // 3より大きく７より小さいとき
-        else if(5 < randomInt && randomInt < 8) {
+        else if(4 < randomInt && randomInt < 8) {
             // Buffアイテム出現
             GameObject buffItem = MonobitNetwork.Instantiate(BUFF_ITEM_PREFAB_PASS, pos, Quaternion.identity, 0, null);
             return;
@@ -165,6 +163,15 @@ public class Item : Origin {
             GameObject nuffItem = MonobitNetwork.Instantiate(NUFF_ITEM_PREFAB_PASS, pos, Quaternion.identity, 0, null);
             return;
         }
-      
     }
+    //========================================================
+    // RPC処理  
+    //========================================================
+    [MunRPC]
+    void DestoryItem() {
+        Destroy(gameObject);
+    }
+    //========================================================
+    // RPC処理 はここまで
+    //========================================================
 }

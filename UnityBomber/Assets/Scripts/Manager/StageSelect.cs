@@ -8,7 +8,7 @@ public class StageSelect : Origin {
     private const string LOAD_STAGE = "LoadStage";
 
     public Image m_image;
-    public Sprite m_stg1, m_stg2;
+    public Sprite m_stg10, m_stg11,m_stg12,m_stg20;
 
     public Text t_stageName, t_commentary;
 
@@ -53,26 +53,26 @@ public class StageSelect : Origin {
 
             case 1:
 
-                m_image.sprite = m_stg1;
+                m_image.sprite = m_stg10;
                 t_stageName.text = "<b>学園広場その1</b>";
-                t_commentary.text = "障害物のない\nシンプルなステージ";
+                t_commentary.text = "<b>障害物のない\nシンプルなステージ</b>";
 
                 break;
 
             case 2:
-                m_image.sprite = m_stg1;
+                m_image.sprite = m_stg11;
                 t_stageName.text = "<b>学園広場その2</b>";
-                t_commentary.text = "障害物ありの\nシンプルなステージ";
+                t_commentary.text = "<b>障害物ありの\nシンプルなステージ</b>";
                 break;
             case 3:
-                m_image.sprite = m_stg1;
-                t_stageName.text = "<b>学園広場その１</b>";
-                t_commentary.text = "すこし複雑な\nテクニカルステージ";
+                m_image.sprite = m_stg12;
+                t_stageName.text = "<b>学園広場その3</b>";
+                t_commentary.text = "<b>すこし複雑な\nテクニカルステージ</b>";
                 break;
             case 4:
-                m_image.sprite = m_stg2;
+                m_image.sprite = m_stg20;
                 t_stageName.text = "<b>デパート屋上</b>";
-                t_commentary.text = "障害物のない\nシンプルなステージ";
+                t_commentary.text = "<b>障害物のない\nシンプルなステージ</b>";
                 break;
             default:
 

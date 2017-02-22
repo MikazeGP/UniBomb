@@ -93,7 +93,7 @@ public class ResultManager : Origin {
         m_enter = false;
         // UIの初期化
         this.InitUI(m_maxPlayer);
-
+        AudioManager.Instance.PlayBGM(AUDIO.BGM_RESULT);
     }
     //========================================================
     // 初期化処理はここまで

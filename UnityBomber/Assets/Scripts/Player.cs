@@ -14,6 +14,9 @@ public class Player : Origin{
     // ゲームマネージャーオブジェクトの名前
     private const string GAME_MGR = "GameMgr";
 
+    // コルーチン
+    private const string COROUTINE_INVINCIBLE_PLAYER = "InvinciblePlayer";
+
     // RPC
     // 死亡受信処理名
     private const string RPC_RECV_DIE = "RecvDie";
@@ -52,6 +55,8 @@ public class Player : Origin{
     private GameMgr m_gamemgr;
     // キル数
     public int m_killScore;
+    // プレイヤーの無敵化
+    private bool m_invincible;
     //========================================================
     // 初期化処理
     //========================================================
@@ -76,6 +81,8 @@ public class Player : Origin{
         m_plrStock = m_gamemgr.m_plrStock[PlayerId];
         // レイヤーを設定
         gameObject.layer = 8 + PlayerId;
+        // 無敵化
+        StartCoroutine(COROUTINE_INVINCIBLE_PLAYER);
     }
     //========================================================
     // 初期化処理はここまで
@@ -211,7 +218,7 @@ public class Player : Origin{
     void OnTriggerEnter(Collider col) {
 
         // 爆発エフェクトに触れたら倒れる
-        if(col.tag == EXPLOSION_TAG && m_deathFlag == false) {
+        if(col.tag == EXPLOSION_TAG && m_deathFlag == false && m_invincible == false) {
 
             if (!monobitView.isMine){
 
@@ -303,7 +310,7 @@ public class Player : Origin{
     }
 
     //========================================================
-    // UPC処理  
+    // RPC処理  
     //========================================================
     [MunRPC]
     /// <summary>
@@ -327,5 +334,21 @@ public class Player : Origin{
 
     //========================================================
     // UPC処理はここまで 
+    //========================================================
+
+    //========================================================
+    // コルーチン 
+    //========================================================
+    private IEnumerator InvinciblePlayer() {
+        // 無敵化
+        m_invincible = true;
+        yield return new WaitForSeconds(5.0f);
+        // 解除
+        m_invincible = false;
+
+    }
+
+    //========================================================
+    // コルーチンはここまで 
     //========================================================
 }

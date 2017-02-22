@@ -37,6 +37,8 @@ namespace ItemAbility{
 
         public override void SetAbility(Player plr){
 
+            AudioManager.Instance.PlaySE(AUDIO.SE_BUFF);
+
             switch (m_itemNum()){
 
                 case 1:
@@ -79,6 +81,8 @@ namespace ItemAbility{
 
         public override void SetAbility(Player plr){
 
+            AudioManager.Instance.PlaySE(AUDIO.SE_NUFF);
+
             m_plr = plr;
             switch (m_itemNum2()){
 
@@ -90,6 +94,8 @@ namespace ItemAbility{
                 case 2:
                     // ボム残機を1減らす
                     m_plr.m_stockBomb--;
+                    // ボムは1より少なくならない
+                    if (m_plr.m_stockBomb < 1) { m_plr.m_stockBomb = 1; }
                     Debug.Log("ボム数ダウン");
                     break;
                 case 3:

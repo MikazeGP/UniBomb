@@ -346,8 +346,6 @@ public class GameMgr : Origin {
 
         // タイマーをスタートする
         m_timer.IsEnable = true;
-        // BGMを再生
-        AudioManager.Instance.PlayBGM(AUDIO.BGM_BATTLE1);
     }
 
     //========================================================
