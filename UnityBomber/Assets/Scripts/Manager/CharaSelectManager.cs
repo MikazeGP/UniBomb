@@ -177,8 +177,8 @@ public class CharaSelectManager : Origin {
                 t_powerParam.text = "<b>3</b>";
                 t_speedParam.text = "<b>3</b>";
                 r_kohaku.rectTransform.position = new Vector3(225, 334, 0);
-                r_misaki.rectTransform.position = new Vector3(-230, 334, 0);
-                r_yuko.rectTransform.position = new Vector3(-260, 334, 0);
+                r_misaki.rectTransform.position = new Vector3(-1230, 334, 0);
+                r_yuko.rectTransform.position = new Vector3(-1260, 334, 0);
                 m_bombStock = 3;
                 break;
             // みさき
@@ -191,9 +191,9 @@ public class CharaSelectManager : Origin {
                 t_bombStockParam.text = "<b>2</b>";
                 t_powerParam.text = "<b>3</b>";
                 t_speedParam.text = "<b>4</b>";
-                r_kohaku.rectTransform.position = new Vector3(-225, 334, 0);
+                r_kohaku.rectTransform.position = new Vector3(-1225, 334, 0);
                 r_misaki.rectTransform.position = new Vector3(230, 334, 0);
-                r_yuko.rectTransform.position = new Vector3(-260, 334, 0);
+                r_yuko.rectTransform.position = new Vector3(-1260, 334, 0);
                 m_bombStock = 2;
                 break;
             // ゆうこ
@@ -206,8 +206,8 @@ public class CharaSelectManager : Origin {
                 t_bombStockParam.text = "<b>4</b>";
                 t_powerParam.text = "<b>4</b>";
                 t_speedParam.text = "<b>1</b>";
-                r_kohaku.rectTransform.position = new Vector3(-225, 334, 0);
-                r_misaki.rectTransform.position = new Vector3(-230, 334, 0);
+                r_kohaku.rectTransform.position = new Vector3(-1225, 334, 0);
+                r_misaki.rectTransform.position = new Vector3(-1230, 334, 0);
                 r_yuko.rectTransform.position = new Vector3(260, 334, 0);
                 m_bombStock = 4;
                 break;
