@@ -67,15 +67,16 @@ public class Effect : Origin {
 
     void OnTriggerEnter(Collider col) {
 
-        if (col.GetComponent<Player>() != null && col.GetComponent<Player>().m_deathFlag == true) {
+        if(col.tag == PLAYER_TAG) {
+            if (col.GetComponent<Player>() != null && col.GetComponent<Player>().m_deathFlag == true){
 
-            print("すでに死んでる");
-            return;
+                print("すでに死んでる");
+                return;
+            }
+            if ((monobitView.isMine)) { return; }
+
+            monobitView.RPC(RPC_RECV_KILLSCORE, MonobitTargets.All, m_createId);
         }
-
-        if ((monobitView.isMine )){ return; }
-
-        monobitView.RPC(RPC_RECV_KILLSCORE, MonobitTargets.All, m_createId);
     }
 
     // タイマーを設定
