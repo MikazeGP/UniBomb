@@ -71,8 +71,13 @@ public class StageSelect : Origin {
                 break;
             case 4:
                 m_image.sprite = m_stg20;
-                t_stageName.text = "<b>デパート屋上</b>";
+                t_stageName.text = "<b>ビル屋上その１</b>";
                 t_commentary.text = "<b>障害物のない\nシンプルなステージ</b>";
+                break;
+            case 5:
+                m_image.sprite = m_stg20;
+                t_stageName.text = "<b>ビル屋上その２</b>";
+                t_commentary.text = "<b>障害物ありの\nシンプルなステージ</b>";
                 break;
             default:
 
@@ -99,7 +104,7 @@ public class StageSelect : Origin {
                 m_stageNum--;
             }
 
-            if (m_stageNum > 5) { m_stageNum = 1; }
+            if (m_stageNum > 6) { m_stageNum = 1; }
             else if (m_stageNum < 1) { m_stageNum = 4; }
 
             // ここで音を再生
@@ -160,6 +165,9 @@ public class StageSelect : Origin {
                 break;
             case 4:
                 FadeManager.Instance.MonobitLoadLevel(STAGE2_SCENE, 1.0f);
+                break;
+            case 5:
+                FadeManager.Instance.MonobitLoadLevel(STAGE2_2_SCENE, 1.0f);
                 break;
             
         }
