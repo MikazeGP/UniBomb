@@ -3,20 +3,35 @@ using System.Collections;
 using MonobitEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// ステージ選択を管理するクラス
+/// </summary>
 public class StageSelect : Origin {
 
+    //========================================================
+    // 定数
+    //========================================================
     private const string LOAD_STAGE = "LoadStage";
 
+    //========================================================
+    // UI関連
+    //========================================================
     public Image m_image;
     public Sprite m_stg10, m_stg11,m_stg12,m_stg20;
 
     public Text t_stageName, t_commentary;
 
+    //========================================================
+    // リテラル
+    //========================================================
     private int m_stageNum;
     private bool m_canPush;
     private bool m_stop;
     private bool m_decided;
 
+    //========================================================
+    // 初期化処理
+    //========================================================
     void Start() {
 
         m_stageNum = 1;
@@ -24,7 +39,13 @@ public class StageSelect : Origin {
         m_stop = false;
 
     }
+    //========================================================
+    // 初期化処理はここまで
+    //========================================================
 
+    //========================================================
+    // 更新処理
+    //========================================================
     void Update() {
 
         // ホスト以外は処理をしない
@@ -46,7 +67,12 @@ public class StageSelect : Origin {
             CheckState();
         }
     }
-
+    //========================================================
+    // 更新処理はここまで
+    //========================================================
+    //========================================================
+    // UI更新処理
+    //========================================================
     void ChangeStage(int num) {
 
         switch (num) {
@@ -71,8 +97,13 @@ public class StageSelect : Origin {
                 break;
             case 4:
                 m_image.sprite = m_stg20;
-                t_stageName.text = "<b>デパート屋上</b>";
+                t_stageName.text = "<b>ビル屋上その１</b>";
                 t_commentary.text = "<b>障害物のない\nシンプルなステージ</b>";
+                break;
+            case 5:
+                m_image.sprite = m_stg20;
+                t_stageName.text = "<b>ビル屋上その２</b>";
+                t_commentary.text = "<b>隠しステージ</b>";
                 break;
             default:
 
@@ -80,6 +111,12 @@ public class StageSelect : Origin {
         }
     }
 
+    //========================================================
+    // UI更新処理はここまで
+    //========================================================
+    //========================================================
+    // 入力処理
+    //========================================================
     int StageNum() {
 
         if (Mathf.Abs(Input.GetAxis(AXIS_HORIZONTAL)) < 0.1f){
@@ -140,7 +177,13 @@ public class StageSelect : Origin {
             
         }
     }
+    //========================================================
+    // 入力処理はここまで
+    //========================================================
 
+    //========================================================
+    // RPC処理
+    //========================================================
     [MunRPC]
     void LoadStage() {
 
@@ -161,9 +204,15 @@ public class StageSelect : Origin {
             case 4:
                 FadeManager.Instance.MonobitLoadLevel(STAGE2_SCENE, 1.0f);
                 break;
+            case 5:
+                FadeManager.Instance.MonobitLoadLevel(STAGE2_2_SCENE, 1.0f);
+                break;
             
         }
         // BGMを止める
         AudioManager.Instance.FadeOutBGM();
     }
+    //========================================================
+    // RPC処理はここまで
+    //========================================================
 }

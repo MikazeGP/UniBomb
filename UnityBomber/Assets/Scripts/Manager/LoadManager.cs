@@ -7,6 +7,14 @@ public class LoadManager : Origin {
     void Start () {
 
         FrameCount = 0;
+
+        // 音量の初期化
+        AudioManager.Instance.ChangeVolume(
+            GrobalData.Instance._currentBGMVolume,
+            GrobalData.Instance._currentSEVolume,
+            GrobalData.Instance._currentVoiceVolume
+            );
+
 	}
 	
 	// Update is called once per frame

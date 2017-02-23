@@ -49,7 +49,7 @@ public class GrobalData : MonoBehaviour {
     // 自機のステータス
 
     // 使用するプレイヤーの名前
-    public string _plrCharaName = "UnityChan";
+    public string _plrCharaName = "";
 
     // プレイヤー数
     public int _plrCount = 4;
@@ -80,4 +80,16 @@ public class GrobalData : MonoBehaviour {
 
     // 各プレイヤーの順位
     public int[] _plrRank = new int[] { 1, 2, 3, 4 };
+
+    // 引き分けフラグ
+    public bool _drawMatch;
+
+    // オーディオ関連
+    // 音量
+    // BGM
+    public float _currentBGMVolume = 0.5f;
+    // SE
+    public float _currentSEVolume = 0.5f;
+    // Voice
+    public float _currentVoiceVolume = 0.5f;
 }

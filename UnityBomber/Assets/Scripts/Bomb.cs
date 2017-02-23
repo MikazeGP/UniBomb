@@ -56,8 +56,6 @@ public class Bomb : Origin {
 
     void OnTriggerEnter(Collider col){
 
-        print("衝突した" + col.name);
-
         // 爆発エフェクトに触れたら...
         if (col.tag == "Explosion") {
 

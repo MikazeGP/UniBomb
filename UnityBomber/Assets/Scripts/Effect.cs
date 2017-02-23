@@ -69,8 +69,6 @@ public class Effect : Origin {
 
         if(col.tag == PLAYER_TAG) {
             if (col.GetComponent<Player>() != null && col.GetComponent<Player>().m_deathFlag == true){
-
-                print("すでに死んでる");
                 return;
             }
             if ((monobitView.isMine)) { return; }

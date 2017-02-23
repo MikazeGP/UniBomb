@@ -10,6 +10,8 @@ public class ModeSelectManager : Origin {
     public GameObject SelectMark;
     // 各ボタン
     public Button RANDOM_BUTTON, ROOM_BUTTON,OPSION_BUTTON, BACK_BUTTON;
+    // 解説テキスト
+    public Text m_commentaryText;
     private bool m_stop;
     private bool m_canPush;
     [SerializeField]
@@ -73,6 +75,8 @@ public class ModeSelectManager : Origin {
 
                 SelectMark.GetComponent<RectTransform>().anchoredPosition = new Vector2(-395f, 460f);
 
+                m_commentaryText.text = "<b>部屋を立てて対戦します</b>";
+
                 if (Input.GetButtonDown(FIRE1_BUTTON)) {
 
                     this.LoadChatScene();
@@ -80,31 +84,32 @@ public class ModeSelectManager : Origin {
                 break;
             // ランダムマッチ
             case 1:
-
+                m_commentaryText.text = "<b>このモードは現在使えません</b>";
                 SelectMark.GetComponent<RectTransform>().anchoredPosition = new Vector2(-395f, 340f);
 
-                
+                /*
                 if (Input.GetButtonDown(FIRE1_BUTTON))
                 {
                     this.LoadCharacterSelectScene();
                    
-                }
+                }*/
 
                 break;
             
             // オプション
             case 2:
-
                 SelectMark.GetComponent<RectTransform>().anchoredPosition = new Vector2(-395f, 240f);
+                m_commentaryText.text = "<b>音量を変更できます</b>";
                 if (Input.GetButtonDown(FIRE1_BUTTON)){
 
                     this.LoadOpsionScene();
                 }
                 break;
 
-            // タイトル
+            // ゲームを終了
             case 3:
                 SelectMark.GetComponent<RectTransform>().anchoredPosition = new Vector2(-395f, 150f);
+                m_commentaryText.text = "<b>ゲームを終了します</b>";
                 if (Input.GetButton(FIRE1_BUTTON))
                 {
 

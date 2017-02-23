@@ -3,6 +3,10 @@ using System.Collections;
 using FixedPhrase;
 using MonobitEngine;
 
+/// <summary>
+/// チャットで
+/// 定型文を管理するクラス
+/// </summary>
 public class FixedPhraseManager : Origin {
 
     //========================================================
@@ -100,16 +104,25 @@ public class FixedPhraseManager : Origin {
         }
         return result;
     }
-
+    /// <summary>
+    /// 定型文の呼び出し
+    /// </summary>
+    /// <param name="i">呼び出したい定型文の番号</param>
     public void Speak(int i) {
-
+        // 定型文を設定
         this.SetFixedPhrase(SetFixedPhrase(i));
-
+        // SEを再生
         AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
+        // 定型文を送信
         monobitView.RPC(RPC_RECV_FIXEDPHRASE, MonobitTargets.All, MonobitNetwork.player.name, this.GetFixedPhrase());
     }
 
     [MunRPC]
+    /// <summary>
+    /// 定型文を受信
+    /// </summary>
+    /// <param name="senderName">送り主</param>
+    /// <param name="chatWord">内容</param>
     void RecvFixedPhrase(string senderName,string chatWord) {
 
         m_chat.chatLog.Add(senderName + " : " + chatWord);

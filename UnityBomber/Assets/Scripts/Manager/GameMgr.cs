@@ -107,6 +107,7 @@ public class GameMgr : Origin {
         m_plrBombStock = GrobalData.Instance._plrBombStock;
         m_useCharaName = GrobalData.Instance._useCharaName;
         m_maxPlayer = GrobalData.Instance._plrCount;
+        // 各プレイヤーの情報を初期化
         m_plrKill = new int[] { 0,0,0,0};
         m_plrDeath = new int[] { 0,0,0,0};
         m_plrRank = new int[] { 1, 2, 3, 4 };
@@ -306,15 +307,15 @@ public class GameMgr : Origin {
     /// </summary>
     /// <param name="maxPlayer"></param>
     void UpdatePlayerStockUI(int maxPlayer) {
-
+        // プレイヤーの数だけ更新する
         for(int i = 0; i < maxPlayer; i++) {
-
+            // 残機が１より少ないとき
             if(m_plrStock[i] < 1) {
-
+                // 「KO」と表示する
                 m_plrStockUI[i].text ="<b>     KO</b>";
 
             }else {
-
+                // 残機の数だけ★を表示
                 m_plrStockUI[i].text = "<b>" + new string('★', m_plrStock[i]) + "</b>";
             }
         }
@@ -360,14 +361,30 @@ public class GameMgr : Origin {
     /// </summary>
     [MunRPC]
     void RecvLoadResultScene() {
+        int count = 0;
 
         for(int i = 0 ; i < m_maxPlayer; i++) {
-            if(m_dieFlag[i] == false) { GrobalData.Instance._plrWinFlag[i] = true; print(i); }
+            if(m_dieFlag[i] == false) {
+
+                GrobalData.Instance._plrWinFlag[i] = true;
+                count++;
+            }
+        }
+        if(count > 1) {
+            for (int i = 0; i < m_maxPlayer; i++){
+
+                if (GrobalData.Instance._plrWinFlag[i] == true){
+
+                    GrobalData.Instance._plrWinFlag[i] = false;
+                }
+            }
+            GrobalData.Instance._drawMatch = true;
         }
         // グローバルデータに保存
         GrobalData.Instance._plrKillScore = m_plrKill;
         GrobalData.Instance._plrDeathScore = m_plrDeath;
         GrobalData.Instance._plrRank = m_plrRank;
+        if(m_maxPlayer == 1) { FadeManager.Instance.MonobitLoadLevel(TITLE_SCENE, 2.0f); }
         // リザルト画面に移動
         FadeManager.Instance.MonobitLoadLevel(RESULT_SCENE, 2.0f);
     }
@@ -382,8 +399,8 @@ public class GameMgr : Origin {
     /// 入力処理の更新
     /// </summary>
     void UpdateInput() {
-
-        BackTitle();
+        // タイトルに戻る
+        //BackTitle();
     }
 
     // デバッグ用
@@ -463,7 +480,7 @@ public class GameMgr : Origin {
         AudioManager.Instance.FadeOutBGM();
 
         if (MonobitEngine.MonobitNetwork.isHost) {
-
+            // コルーチンを開始
             StartCoroutine(LOADRESULT_COROUTINE);
         }
     }
@@ -474,8 +491,14 @@ public class GameMgr : Origin {
     /// <returns></returns>
     IEnumerator LoadResult() {
 
-        // ２秒待つ
+        // 2秒待つ
         yield return new WaitForSeconds(2.0f);
+        if(m_maxPlayer == 1) {
+            FadeManager.Instance.LoadLevel(TITLE_SCENE, 2.0f);
+            // サーバーから切断する
+            MonobitNetwork.DisconnectServer();
+            yield break;
+        }
         // リザルトシーンを読み込む送信処理
         monobitView.RPC(RPC_RECV_LOAD_RESULTSCENE, MonobitTargets.All, null);
     }

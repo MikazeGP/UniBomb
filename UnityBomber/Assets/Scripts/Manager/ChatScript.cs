@@ -24,8 +24,19 @@ public class ChatScript : Origin{
     public List<string> chatLog = new List<string>();
 
     void Start() {
-        // 残機の初期化
+        // グローバルデータの初期化
+        GrobalData.Instance._plrCharaName = "";
+        GrobalData.Instance._plrCount = 4;
         GrobalData.Instance._plrStock = new int[] { 3, 3, 3, 3 };
+        GrobalData.Instance._plrName = new string[] { "", "", "", "" };
+        GrobalData.Instance._useCharaName = new string[] { "", "", "", "" };
+        GrobalData.Instance._plrBombStock = new int[] { 0, 0, 0, 0 };
+        GrobalData.Instance._plrScore = new int[] { 0, 0, 0, 0 };
+        GrobalData.Instance._plrKillScore = new int[] { 0, 0, 0, 0 };
+        GrobalData.Instance._plrDeathScore = new int[] { 0, 0, 0, 0 };
+        GrobalData.Instance._plrWinFlag = new bool[] { false, false, false, false };
+        GrobalData.Instance._plrRank = new int[] { 1, 2, 3, 4 };
+        GrobalData.Instance._drawMatch = false;
     }
 
     /**
@@ -145,6 +156,9 @@ public class ChatScript : Origin{
                 // ルームを作成して入室する
                 if (GUILayout.Button("Create Room", GUILayout.Width(150)))
                 {
+                    if(this.maxPlayers > 4 || 1 > this.maxPlayers) {
+                        return;
+                    }
                     RoomSettings roomSettings = new RoomSettings()
                     {
                         isVisible = this.isVisible,
@@ -192,7 +206,7 @@ public class ChatScript : Origin{
             // MUNサーバに接続する
             if (GUILayout.Button("Connect Server", GUILayout.Width(150)) && MonobitNetwork.playerName != "")
             {
-                MonobitNetwork.ConnectServer("UnityBomber_v1.5Beta");
+                MonobitNetwork.ConnectServer("UnityBomber_v1.4");
                 AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
                
             }

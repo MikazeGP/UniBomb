@@ -64,6 +64,8 @@ public class ResultManager : Origin {
     private int[] m_playerDeath;
     // プレイヤーの順位
     private int[] m_playerRank;
+    // 引き分けフラグ
+    private bool m_drawFlag;
     // プレイヤーの継続フラグ
     private bool[] m_playerGameContinue;
     // 各プレイヤーはキャラを決定したか true..決定済み false..選択中
@@ -87,6 +89,7 @@ public class ResultManager : Origin {
         m_playerDeath = GrobalData.Instance._plrDeathScore;
         m_playerRank = GrobalData.Instance._plrRank;
         m_playerWinFlag = GrobalData.Instance._plrWinFlag;
+        m_drawFlag = GrobalData.Instance._drawMatch;
         m_playerGameContinue = new bool[] { false,false,false,false};
         m_plrDecided = new bool[] { false, false, false, false };
         m_canPush = false;
@@ -134,6 +137,7 @@ public class ResultManager : Origin {
             m_playerNameTextUI[i].text = m_playerName[i];
             m_playerDeathTextUI[i].text = m_playerDeath[i].ToString();
             m_playerKillTextUI[i].text = m_playerKill[i].ToString();
+            if(m_drawFlag == true) { m_playerRankTextUI[i].text = "<b>DRAW</b>";return; }
             if (m_playerWinFlag[i]) { m_playerRankTextUI[i].text = "<b>WIN</b>"; }
             else { m_playerRankTextUI[i].text = "<b>LOSE</b>"; }
 
