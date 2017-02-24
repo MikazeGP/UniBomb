@@ -28,6 +28,7 @@ public class StageSelect : Origin {
     private bool m_canPush;
     private bool m_stop;
     private bool m_decided;
+    private int m_bgmNum;
 
     //========================================================
     // 初期化処理
@@ -37,7 +38,7 @@ public class StageSelect : Origin {
         m_stageNum = 1;
         FrameCount = 0;
         m_stop = false;
-
+        m_bgmNum = 0;
     }
     //========================================================
     // 初期化処理はここまで
@@ -82,23 +83,26 @@ public class StageSelect : Origin {
                 m_image.sprite = m_stg10;
                 t_stageName.text = "<b>学園広場その1</b>";
                 t_commentary.text = "<b>障害物のない\nシンプルなステージ</b>";
-
+                m_bgmNum = 0;
                 break;
 
             case 2:
                 m_image.sprite = m_stg11;
                 t_stageName.text = "<b>学園広場その2</b>";
                 t_commentary.text = "<b>障害物ありの\nシンプルなステージ</b>";
+                m_bgmNum = 2;
                 break;
             case 3:
                 m_image.sprite = m_stg12;
                 t_stageName.text = "<b>学園広場その3</b>";
                 t_commentary.text = "<b>すこし複雑な\nテクニカルステージ</b>";
+                m_bgmNum = 3;
                 break;
             case 4:
                 m_image.sprite = m_stg20;
                 t_stageName.text = "<b>ビル屋上その１</b>";
                 t_commentary.text = "<b>障害物のない\nシンプルなステージ</b>";
+                m_bgmNum = 4;
                 break;
             case 5:
                 m_image.sprite = m_stg20;
@@ -157,7 +161,7 @@ public class StageSelect : Origin {
             // SEを再生
             AudioManager.Instance.PlaySE(AUDIO.SE_ENTER);
 
-            monobitView.RPC(LOAD_STAGE, MonobitTargets.All, null);
+            monobitView.RPC(LOAD_STAGE, MonobitTargets.All, StageNum(),m_bgmNum);
 
             m_stop = true;
         }
@@ -185,12 +189,13 @@ public class StageSelect : Origin {
     // RPC処理
     //========================================================
     [MunRPC]
-    void LoadStage() {
+    void LoadStage(int stgNum,int bgmNum) {
 
-        switch (StageNum()) {
+        GrobalData.Instance._BGMNum = bgmNum;
+
+        switch (stgNum) {
 
             case 1:
-
                 FadeManager.Instance.MonobitLoadLevel(STAGE1_SCENE, 1.0f);
                 break;
 

@@ -86,6 +86,8 @@ public class GrobalData : MonoBehaviour {
 
     // オーディオ関連
     // 音量
+    // BGM番号
+    public int _BGMNum = 0;
     // BGM
     public float _currentBGMVolume = 0.5f;
     // SE

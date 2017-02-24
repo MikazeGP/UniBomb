@@ -9,6 +9,7 @@ public class SetBGM : Origin {
 
 	// Use this for initialization
 	void Start () {
+        m_bgmNum = GrobalData.Instance._BGMNum;
 
         StartCoroutine(COROUTINE_PLAY_BGM);
 	}
