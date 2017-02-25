@@ -170,7 +170,7 @@ public class CharaSelectManager : Origin {
             case 1:
                 t_anotherName.text = "<b>ユニティちゃん</b>";
                 t_charaName.text = "<b>大鳥 こはく</b>";
-                t_kaisetsu.text = "バランス型\n弱点がなく、柔軟な立ち回りが可能\n初心者におすすめ";
+                t_kaisetsu.text = "バランス型\n大きな弱点がないので序盤から\n優位に立ち回ることができます。\n初心者向け。";
                 m_charaName = "UnityChan";
                 a_selectAni.SetInteger(ANIPARAM_PLRNUM, 1);
                 t_bombStockParam.text = "<b>3</b>";
@@ -179,13 +179,13 @@ public class CharaSelectManager : Origin {
                 r_kohaku.rectTransform.position = new Vector3(225, 334, 0);
                 r_misaki.rectTransform.position = new Vector3(-1230, 334, 0);
                 r_yuko.rectTransform.position = new Vector3(-1260, 334, 0);
-                m_bombStock = 3;
+                m_bombStock = 4;
                 break;
             // みさき
             case 2:
                 t_anotherName.text = "<b>生徒会長</b>";
                 t_charaName.text = "<b>藤原 みさき</b>";
-                t_kaisetsu.text = "高速移動型\n移動速度は全キャラ中最速\nただしボムは２つしか持てないため\n回避がメイン。中級者向け";
+                t_kaisetsu.text = "高速移動型\n移動速度は最速だが初期ボムは２つ\nしかありません。序盤をいかに\n切り抜けるかが勝利のカギ。";
                 m_charaName = "Misaki";
                 a_selectAni.SetInteger(ANIPARAM_PLRNUM, 2);
                 t_bombStockParam.text = "<b>2</b>";
@@ -194,13 +194,13 @@ public class CharaSelectManager : Origin {
                 r_kohaku.rectTransform.position = new Vector3(-1225, 334, 0);
                 r_misaki.rectTransform.position = new Vector3(230, 334, 0);
                 r_yuko.rectTransform.position = new Vector3(-1260, 334, 0);
-                m_bombStock = 2;
+                m_bombStock = 3;
                 break;
             // ゆうこ
             case 3:
                 t_anotherName.text = "<b>マイペースなゲーマー</b>";
                 t_charaName.text = "<b>神林 ゆうこ</b>";
-                t_kaisetsu.text = "高火力型\nボムの火力、所持数は最高だが\n移動速度は最遅。上級者向け";
+                t_kaisetsu.text = "高火力型\nボムの火力、所持数は全キャラ中\nトップですが、かなり鈍足です。\n玄人向け";
                 m_charaName = "Yuko";
                 a_selectAni.SetInteger(ANIPARAM_PLRNUM, 3);
                 t_bombStockParam.text = "<b>4</b>";
@@ -209,7 +209,7 @@ public class CharaSelectManager : Origin {
                 r_kohaku.rectTransform.position = new Vector3(-1225, 334, 0);
                 r_misaki.rectTransform.position = new Vector3(-1230, 334, 0);
                 r_yuko.rectTransform.position = new Vector3(260, 334, 0);
-                m_bombStock = 4;
+                m_bombStock = 5;
                 break;
             default:
                 break;
@@ -331,7 +331,7 @@ public class CharaSelectManager : Origin {
                 m_decided = false;
 
                 // 現在選択しているキャラを送信してキャラを選択済みであることを送信する
-                monobitView.RPC(RPC_RECV_CHARACTER_SELECT, MonobitTargets.All, MonobitNetwork.player.ID, "",0,false);
+                monobitView.RPC(RPC_RECV_CHARACTER_SELECT, MonobitTargets.All, MonobitNetwork.player.ID, m_charaName, m_bombStock, false);
 
             }
 
@@ -412,7 +412,7 @@ public class CharaSelectManager : Origin {
     bool CheckDecided() {
 
         for (int i = 0; i < maxPlayer; i++) {
-
+            
             if(m_plrDecided[i] == false) {
 
                 return false;

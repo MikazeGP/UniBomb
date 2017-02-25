@@ -67,8 +67,19 @@ public class Bomb : Origin {
     void SetTimer() {
 
         m_timer = new Timer();
-        // ３秒で爆発するよう設定
-        m_timer.LimitTime = 3.0f;
+        // みさきのみ2秒で爆発するよう設定
+        if (m_playerName == "Misaki") {
+
+            m_timer.LimitTime = 2.0f;
+           
+        }else if (m_playerName == "UnityChan") {
+
+            m_timer.LimitTime = 3.0f;
+
+        }else {
+            // 4.0秒で爆発するよう設定
+            m_timer.LimitTime = 4.0f;
+        }
         // 上記で指定した時間に達したとき
         //　Delegateで指定した関数を呼び出す
         m_timer.FireDelegate = Explosion;

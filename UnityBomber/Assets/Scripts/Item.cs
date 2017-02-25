@@ -23,6 +23,9 @@ public class Item : Origin {
     // コルーチン
     // アイテムの無敵化
     private const string COROUTINE_INVINCIBLE_ITEM = "InvincibleItem";
+
+    // 回転量
+    private Vector3 ITEM_ROTATION =  new Vector3(0f, 1.666f, 0f);
     //========================================================
     // リテラル
     //========================================================
@@ -82,10 +85,36 @@ public class Item : Origin {
     //========================================================
     void Update () {
 
-        if(m_currentItemType == ITEM_TYPE.NONE || m_currentItemType == ITEM_TYPE.BOX) { return; }
+        if(m_currentItemType == ITEM_TYPE.NONE ) { return; }
+        // 移動、回転の更新
+        UpdateTransform();
+        
+        if(m_currentItemType == ITEM_TYPE.BOX) { return; }
         // タイマーの更新
         if (m_timer.Update()) {}
+       
 	}
+    void UpdateTransform() {
+
+        if(m_currentItemType == ITEM_TYPE.BOX) {
+            //箱の移動
+            BoxMove();
+
+        }else {
+            // アイテムの回転
+            ItemRotation();
+        }
+    }
+    // 箱の移動
+    void BoxMove() {
+            // 箱を位置を変更する
+            if (Y > -0.185f) { Y -= 0.1f; }
+    }
+    // アイテムの回転
+    void ItemRotation() {
+        // アイテムを回転
+        gameObject.transform.Rotate(ITEM_ROTATION);
+    }
     //========================================================
     // 更新処理はここまで
     //========================================================
@@ -126,7 +155,7 @@ public class Item : Origin {
             // アイテムをスポーンする
             SpawnItem();
 
-            gameObject.transform.position = new Vector3(X, 100, Z);
+            gameObject.transform.position = new Vector3(X, 140, Z);
         }
     }
     // 消滅処理
@@ -149,11 +178,11 @@ public class Item : Origin {
     void SpawnItem(){
 
         int randomInt = Random.Range(0, 10);
-        Vector3 pos = new Vector3(X, Y + 0.3f, Z);
+        Vector3 pos = new Vector3(X,0.3f, Z);
         // 4より小さいなら出現しない
-        if( randomInt < 5) { return; }
-        // 3より大きく７より小さいとき
-        else if(4 < randomInt && randomInt < 8) {
+        if( randomInt < 2) { return; }
+        // 2より大きく７より小さいとき
+        else if(1 < randomInt && randomInt < 8) {
             // Buffアイテム出現
             GameObject buffItem = MonobitNetwork.Instantiate(BUFF_ITEM_PREFAB_PASS, pos, Quaternion.identity, 0, null);
             return;

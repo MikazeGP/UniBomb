@@ -71,6 +71,7 @@ public class Effect : Origin {
             if (col.GetComponent<Player>() != null && col.GetComponent<Player>().m_deathFlag == true){
                 return;
             }
+            if(col.GetComponent<Player>().m_invincible == true) { return; }
             if ((monobitView.isMine)) { return; }
 
             monobitView.RPC(RPC_RECV_KILLSCORE, MonobitTargets.All, m_createId);

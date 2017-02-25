@@ -22,9 +22,9 @@ namespace ItemAbility{
         protected int m_itemNum2(){
 
             int random = UnityEngine.Random.Range(0, 100);
-            if (random < 24) { return 1; }
+            if (random < 24) { return 2; }
             else if (23 < random && random < 48) { return 2; }
-            else if (47 < random && random < 72) { return 3; }
+            else if (47 < random && random < 72) { return 2; }
             else if (72 < random && random < 94) { return 4; }
             else if (95 < random && random < 97) { return 5; }
             else { return 6; }

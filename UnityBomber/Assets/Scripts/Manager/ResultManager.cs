@@ -137,10 +137,13 @@ public class ResultManager : Origin {
             m_playerNameTextUI[i].text = m_playerName[i];
             m_playerDeathTextUI[i].text = m_playerDeath[i].ToString();
             m_playerKillTextUI[i].text = m_playerKill[i].ToString();
-            if(m_drawFlag == true) { m_playerRankTextUI[i].text = "<b>DRAW</b>";return; }
+            /*
+            if (m_drawFlag == true) { m_playerRankTextUI[i].text = "<b>DRAW</b>";break; }
             if (m_playerWinFlag[i]) { m_playerRankTextUI[i].text = "<b>WIN</b>"; }
+            else { m_playerRankTextUI[i].text = "<b>LOSE</b>"; }*/
+            if(m_drawFlag == true) { m_playerRankTextUI[i].text = "<b>DRAW</b>"; }
+            else if (m_playerWinFlag[i]) { m_playerRankTextUI[i].text = "<b>WIN</b>"; }
             else { m_playerRankTextUI[i].text = "<b>LOSE</b>"; }
-
         }
 
         //========================================================

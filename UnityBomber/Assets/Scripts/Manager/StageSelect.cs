@@ -140,7 +140,7 @@ public class StageSelect : Origin {
                 m_stageNum--;
             }
 
-            if (m_stageNum > 5) { m_stageNum = 1; }
+            if (m_stageNum > 4) { m_stageNum = 1; }
             else if (m_stageNum < 1) { m_stageNum = 4; }
 
             // ここで音を再生

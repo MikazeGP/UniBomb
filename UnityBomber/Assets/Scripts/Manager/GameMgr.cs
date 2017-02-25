@@ -185,10 +185,11 @@ public class GameMgr : Origin {
                 // プレイヤー(i+1)と表示する
                 int j = i + 1;
                 m_plrNameUI[i].text = "<b>Player" + j+"</b>";
-
+                Debug.Log("名前なし");
             }else {
                 // 名前をそのまま表示する
                 m_plrNameUI[i].text =  "<b>"+m_plrName[i]+"</b>";
+                Debug.Log(m_plrName[i]);
             }
             // 残機数を表示
             m_plrStockUI[i].text = "<b>" +new string('★',m_plrStock[i])+ "</b>";
@@ -198,6 +199,7 @@ public class GameMgr : Origin {
             m_plrNameUI[i].color = new Color(1.0f, 0.4f, 0.1f, 1.0f);
             m_plrStockUI[i].color = Color.yellow;
             m_plrStockBgUI[i].color = Color.white;
+            print(m_plrNameUI[i].text);
         }
         //========================================================
         // プレイヤーUIの初期化はここまで

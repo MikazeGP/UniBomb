@@ -13,7 +13,8 @@ public class Origin : MonobitEngine.MonoBehaviour {
     public const string FIRE1_BUTTON = "Fire1";
     public const string FIRE2_BUTTON = "Fire2";
     public const string FIRE3_BUTTON = "Fire3";
-
+    public const string FIRE4_BUTTON = "Fire4";
+    public const string FIRE5_BUTTON = "Fire5";
     /// シーン
     public const string TITLE_SCENE = "Title";
     public const string MODESELECT_SCENE = "ModeSelect";

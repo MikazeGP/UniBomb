@@ -24,10 +24,11 @@ public class Player : Origin{
     private const string RPC_RECV_SHOTBOMB = "RecShotBomb";
 
     // プレイヤーが移動できる最大位置
-    private const float EndPosxMin = -5.0f;
-    private const float EndPosxMax = 5.0f;
-    private const float EndPoszMin = -5.0f;
-    private const float EndPoszMax = 5.0f;
+    private const float EndPosXMin = -5.0f;
+    private const float EndPosXMax = 5.0f;
+    private const float EndPosY = -0.17f;
+    private const float EndPosZMin = -5.0f;
+    private const float EndPosZMax = 5.0f;
 
     // ボムプレハブパス
     private const string BOMB_PREFAB_PASS = "Prefabs/Pbomb";
@@ -56,7 +57,7 @@ public class Player : Origin{
     // キル数
     public int m_killScore;
     // プレイヤーの無敵化
-    private bool m_invincible;
+    public bool m_invincible;
     //========================================================
     // 初期化処理
     //========================================================
@@ -164,12 +165,25 @@ public class Player : Origin{
     /// </summary>
     void MoveFunc() {
 
+        // このボタンが押されているときは移動しない
+        if (Input.GetButton(FIRE2_BUTTON)){  
+            // 待機アニメーション
+            Animator.SetFloat("Speed", 0);
+            return;
+        }
         // 自分の位置を取得
         Vector3 p = new Vector3(X, 0f, Z);
+        // ボタンが押されているとき、移動速度を半減する
+        if(Input.GetButton(FIRE4_BUTTON) || Input.GetButton(FIRE5_BUTTON)) {
+            // 入力した方向分足す
+            p.x = 0.025f * m_moveSpeed * Input.GetAxisRaw(AXIS_HORIZONTAL);
+            p.z = 0.025f * m_moveSpeed * Input.GetAxisRaw(AXIS_VERTICAL);
 
-        // 入力した方向分足す
-        p.x = 0.05f*m_moveSpeed*Input.GetAxisRaw(AXIS_HORIZONTAL);
-        p.z = 0.05f*m_moveSpeed*Input.GetAxisRaw(AXIS_VERTICAL);
+        }else {
+            // 入力した方向分足す
+            p.x = 0.05f * m_moveSpeed * Input.GetAxisRaw(AXIS_HORIZONTAL);
+            p.z = 0.05f * m_moveSpeed * Input.GetAxisRaw(AXIS_VERTICAL);
+        }
 
         // 移動する向きに回転
         gameObject.transform.LookAt(p + transform.position);
@@ -205,8 +219,9 @@ public class Player : Origin{
         Vector3 pos = gameObject.transform.position;
 
         //プレイヤーの位置の制限
-        pos.x = Mathf.Clamp(pos.x, EndPosxMin, EndPosxMax);
-        pos.z = Mathf.Clamp(pos.z, EndPoszMin, EndPoszMax);
+        pos.x = Mathf.Clamp(pos.x, EndPosXMin, EndPosXMax);
+        pos.y = EndPosY;
+        pos.z = Mathf.Clamp(pos.z, EndPosZMin, EndPosZMax);
 
         //プレイヤーの制限位置を取得
         gameObject.transform.position = pos;
@@ -267,7 +282,7 @@ public class Player : Origin{
 
         switch (stock) {
 
-            case 2:
+            case 3:
                 if(m_plrStock != 1) {
 
                     voice = AUDIO.VOICE_V2018;
@@ -279,7 +294,7 @@ public class Player : Origin{
 
                 break;
 
-            case 3:
+            case 4:
 
                 if (m_plrStock != 1){
 
@@ -291,7 +306,7 @@ public class Player : Origin{
 
                 break;
 
-            case 4:
+            case 5:
 
                 if (m_plrStock != 1){
 
