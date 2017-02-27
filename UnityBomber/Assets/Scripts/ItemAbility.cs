@@ -3,9 +3,24 @@ using System.Collections;
 using System;
 
 namespace ItemAbility{
+   
+
 
     // 基底クラス
     public abstract class ItemAbility{
+        //========================================================
+        // 定数
+        //========================================================
+        // ステータス上限
+        // ボムの残機
+        protected const int BOMB_STOCK_MIN = 10;
+        protected const int BOMB_STOCK_MAX = 2;
+        // ボムの火力
+        protected const float BOMB_POWER_MIN = 0.6f;
+        protected const float BOMB_POWER_MAX = 1.4f;
+        // 移動速度
+        protected const float SPEED_MIN = 1.5f;
+        protected const float SPEED_MAX = 3.8f;
 
         public abstract void SetAbility(Player plr);
 
@@ -22,12 +37,19 @@ namespace ItemAbility{
         protected int m_itemNum2(){
 
             int random = UnityEngine.Random.Range(0, 100);
-            if (random < 24) { return 2; }
+            if (random < 24) { return 1; }
             else if (23 < random && random < 48) { return 2; }
-            else if (47 < random && random < 72) { return 2; }
+            else if (47 < random && random < 72) { return 3; }
             else if (72 < random && random < 94) { return 4; }
             else if (95 < random && random < 97) { return 5; }
             else { return 6; }
+        }
+
+        protected void ClampStatus(Player plr) {
+
+            plr.m_stockBomb = Mathf.Clamp(plr.m_stockBomb, BOMB_STOCK_MIN, BOMB_STOCK_MAX);
+            plr.m_bombPower = Mathf.Clamp(plr.m_bombPower, BOMB_POWER_MIN, BOMB_POWER_MAX);
+            plr.m_moveSpeed = Mathf.Clamp(plr.m_moveSpeed, SPEED_MIN, SPEED_MAX);
         }
     }
     // 抽象クラス
@@ -68,6 +90,8 @@ namespace ItemAbility{
                     Debug.Log("全ステータスアップ");
                     break;
             }
+
+            ClampStatus(plr);
         }
     }
     // 抽象クラス
@@ -94,8 +118,6 @@ namespace ItemAbility{
                 case 2:
                     // ボム残機を1減らす
                     m_plr.m_stockBomb--;
-                    // ボムは1より少なくならない
-                    if (m_plr.m_stockBomb < 1) { m_plr.m_stockBomb = 1; }
                     Debug.Log("ボム数ダウン");
                     break;
                 case 3:
@@ -121,6 +143,7 @@ namespace ItemAbility{
                     Debug.Log("全ステータスダウン");
                     break;
             }
+            ClampStatus(m_plr);
         }
     }
 }

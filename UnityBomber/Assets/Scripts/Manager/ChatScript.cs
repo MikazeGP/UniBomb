@@ -112,7 +112,7 @@ public class ChatScript : Origin{
                 }
 
                 // 最大プレイ人数に達し、ホストならゲームをスタートする
-                if (MonobitNetwork.playerCountInRoom == maxPlayers && MonobitEngine.MonobitNetwork.isHost) {
+                if (MonobitEngine.MonobitNetwork.room.playerCount == maxPlayers && MonobitEngine.MonobitNetwork.isHost) {
 
                     if (GUILayout.Button("Game Start", GUILayout.Width(100))){
 

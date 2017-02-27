@@ -388,6 +388,11 @@ public class ResultManager : Origin {
         m_waitTextUI.text = "<b>再戦したいときは、再度部屋を作ってください</b>";
         // 5秒待つ
         yield return new WaitForSeconds(5.0f);
+
+        // ルームから退室する
+        MonobitEngine.MonobitNetwork.LeaveRoom();
+        // ロビーから退室します。
+        MonobitEngine.MonobitNetwork.LeaveLobby();
         // サーバーから切断する
         MonobitNetwork.DisconnectServer();
         // タイトル画面に戻る
