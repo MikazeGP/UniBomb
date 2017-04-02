@@ -1,0 +1,172 @@
+-debug
+-target:library
+-nowarn:0169
+-out:Temp/Assembly-CSharp.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:Assets/Plugins/LZ4/LZ4s.dll
+-r:Assets/Plugins/Monobit/ExtDLL.dll
+-r:Assets/Plugins/Monobit/MLNClient.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_4_1
+-define:UNITY_5_4
+-define:UNITY_5
+-define:UNITY_64
+-define:ENABLE_NEW_BUGREPORTER
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_DUCK_TYPING
+-define:ENABLE_EDITOR_RETINA
+-define:ENABLE_RETINA_GUISTYLES
+-define:ENABLE_FRAME_DEBUGGER
+-define:ENABLE_GENERICS
+-define:ENABLE_HOME_SCREEN
+-define:ENABLE_IMAGEEFFECTS
+-define:ENABLE_LIGHT_PROBES_LEGACY
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_PLUGIN_INSPECTOR
+-define:ENABLE_SHADOWS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_SPRITE_POLYGON
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_UNET
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_VR
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:INCLUDE_IL2CPP
+-define:INCLUDE_DIRECTX12
+-define:PLATFORM_SUPPORTS_MONO
+-define:RENDER_SOFTWARE_CURSOR
+-define:INCLUDE_PUBNUB
+-define:ENABLE_LOCALIZATION
+-define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
+-define:ENABLE_EDITOR_TESTS_RUNNER
+-define:UNITY_STANDALONE_WIN
+-define:UNITY_STANDALONE
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_TEXTUREID_MAP
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_MOVIES
+-define:ENABLE_NETWORK
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLUSTERINPUT
+-define:ENABLE_WEBSOCKET_HOST
+-define:ENABLE_MONO
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+Assets/3DAssets/PowerUp/Scripts/CustomizablePowerUp.cs
+Assets/3DAssets/PowerUp/Scripts/PowerUpManager.cs
+Assets/3DAssets/PowerUp/Scripts/PowerUpRotation.cs
+Assets/3DAssets/PowerUp/Scripts/ScaleParticles.cs
+Assets/3DAssets/PowerUp/Scripts/TakeablePowerUp.cs
+Assets/3DAssets/PowerUp/Scripts/Utility/Singleton.cs
+"Assets/3DAssets/RPG Character Animation Pack/Code/CameraController.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Code/RPGCharacterControllerFREE.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/Bloom.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ImageEffectBase.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ImageEffects.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/PostEffectsBase.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/PostEffectsHelper.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/Quads.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ScreenOverlay.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ScreenSpaceAmbientObscurance.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/ScreenSpaceAmbientOcclusion.cs"
+"Assets/3DAssets/RPG Character Animation Pack/Elements/ImageEffects/Scripts/Triangles.cs"
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Sapporo_Props/SnowBallFightObject/Scripts/EnemyPcController.cs
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Sapporo_Props/SnowBallFightObject/Scripts/MoveSnowBall.cs
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Sapporo_Props/SnowBallFightObject/Scripts/PlayerController.cs
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Sapporo_Props/SnowBallFightObject/Scripts/SantaController.cs
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Sapporo_Props/SnowBallFightObject/Scripts/SnowBallShooter.cs
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Sapporo_Props/SnowBallFightObject/Scripts/SnowManController.cs
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Scripts/QuerySDController/QueryChanSapporoMecanimController.cs
+Assets/3DAssets/ZRNAssets/PQAssets/Query-Chan-SD/Scripts/SceneController/GameSceneController.cs
+"Assets/Monobit Unity Networking/Plugins/MonobitNetwork/MonobitAnimatorView.cs"
+"Assets/Monobit Unity Networking/Plugins/MonobitNetwork/MonobitBridge.cs"
+"Assets/Monobit Unity Networking/Plugins/MonobitNetwork/MonobitNetwork.cs"
+"Assets/Monobit Unity Networking/Plugins/MonobitNetwork/MonobitTransformView.cs"
+"Assets/Monobit Unity Networking/Plugins/MonobitNetwork/MonobitView.cs"
+"Assets/Monobit Unity Networking/Support/MonobitAutoLoginTemplete.cs"
+"Assets/Monobit Unity Networking/Support/MonobitPlayerMoveTemplete.cs"
+Assets/Player/UnityChanControlScriptWithRgidBody.cs
+Assets/Scripts/Bomb.cs
+Assets/Scripts/Constants/AUDIO.cs
+Assets/Scripts/Delegate.cs
+Assets/Scripts/Effect.cs
+Assets/Scripts/GrobalData.cs
+Assets/Scripts/Item.cs
+Assets/Scripts/ItemAbility.cs
+Assets/Scripts/Manager/AudioManager.cs
+Assets/Scripts/Manager/BoxCreateManager.cs
+Assets/Scripts/Manager/CharaSelectManager.cs
+Assets/Scripts/Manager/ChatScript.cs
+Assets/Scripts/Manager/FixedPhrase.cs
+Assets/Scripts/Manager/FixedPhraseManager.cs
+Assets/Scripts/Manager/GameMgr.cs
+Assets/Scripts/Manager/LoadManager.cs
+Assets/Scripts/Manager/ModeSelectManager.cs
+Assets/Scripts/Manager/OpsionManager.cs
+Assets/Scripts/Manager/ResultManager.cs
+Assets/Scripts/Manager/SingletonMonoBehaviour.cs
+Assets/Scripts/Manager/StageSelect.cs
+Assets/Scripts/Manager/TitleManager.cs
+Assets/Scripts/NetworkControl.cs
+Assets/Scripts/Player.cs
+Assets/Scripts/RandomBG.cs
+Assets/Scripts/SetBGM.cs
+Assets/Scripts/SetFace.cs
+Assets/Scripts/Util/Invincible.cs
+Assets/Scripts/Util/Origin.cs
+Assets/Scripts/Util/OriginMgr.cs
+Assets/Scripts/Util/Timer.cs
+Assets/Scripts/Util/Util.cs
+Assets/Scripts/naichilab/FadeManager/Sample/FadeSample.cs
+Assets/Scripts/naichilab/FadeManager/Scripts/FadeManager.cs
+Assets/UnityChan/Bomb.cs
+Assets/UnityChan/Scripts/AutoBlink.cs
+Assets/UnityChan/Scripts/AutoBlinkforSD.cs
+Assets/UnityChan/Scripts/CameraController.cs
+Assets/UnityChan/Scripts/FaceUpdate.cs
+Assets/UnityChan/Scripts/IKCtrlRightHand.cs
+Assets/UnityChan/Scripts/IKLookAt.cs
+Assets/UnityChan/Scripts/IdleChanger.cs
+Assets/UnityChan/Scripts/RandomWind.cs
+Assets/UnityChan/Scripts/SpringBone.cs
+Assets/UnityChan/Scripts/SpringCollider.cs
+Assets/UnityChan/Scripts/SpringManager.cs
+Assets/UnityChan/Scripts/ThirdPersonCamera.cs
+Assets/UnityChan/Scripts/characon.cs
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"

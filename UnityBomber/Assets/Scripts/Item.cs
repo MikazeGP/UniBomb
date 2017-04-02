@@ -5,6 +5,7 @@ using ItemAbility;
 
 public class Item : Origin {
 
+    // アイテムの種類
     public enum  ITEM_TYPE {
         NONE = 0,
         BOX,
@@ -62,17 +63,20 @@ public class Item : Origin {
         
         if(m_currentItemType == ITEM_TYPE.BUFF) {
 
+            // アイテムの設定
             SetItemAbility(new ItemAbility.UpAbility());            
         }
         else if(m_currentItemType == ITEM_TYPE.NUFF) {
-
+            // アイテムの設定
             SetItemAbility(new ItemAbility.DownAbility());
         }
+        // コルーチンの開始
         StartCoroutine(COROUTINE_INVINCIBLE_ITEM);
     }
-
+    // 無敵アイテムの設定
     private IEnumerator InvincibleItem() {
         m_invincible = true;
+        // 2秒待機
         yield return new WaitForSeconds(2.0f);
         m_invincible = false;
     }
@@ -94,6 +98,7 @@ public class Item : Origin {
         if (m_timer.Update()) {}
        
 	}
+    // 移動の更新
     void UpdateTransform() {
 
         if(m_currentItemType == ITEM_TYPE.BOX) {
@@ -122,6 +127,7 @@ public class Item : Origin {
     // アイテムの接触処理
     void OnTriggerEnter(Collider col) {
 
+        // アイテムの種類がなければ処理をしない
         if(m_currentItemType == ITEM_TYPE.NONE) { return; }
 
         // プレイヤーに当たった時
@@ -154,7 +160,7 @@ public class Item : Origin {
             }
             // アイテムをスポーンする
             SpawnItem();
-
+            // 位置を変更する
             gameObject.transform.position = new Vector3(X, 140, Z);
         }
     }
@@ -196,7 +202,11 @@ public class Item : Origin {
     //========================================================
     // RPC処理  
     //========================================================
+
     [MunRPC]
+    /// <summary>
+    /// 　アイテム破壊処理
+    /// </summary>
     void DestoryItem() {
         Destroy(gameObject);
     }

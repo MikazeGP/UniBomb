@@ -26,7 +26,7 @@ public class SetFace{
         Sprite[] facespr = Resources.LoadAll<Sprite>(SPRITE_FILE_PASS);
 
         switch (charaName) {
-
+            // Unityちゃん
             case "UnityChan":
 
                 if (win) { spr = System.Array.Find<Sprite>(facespr, (sprite) => sprite.name.Equals(SPRITE_UTC_G)) ; }

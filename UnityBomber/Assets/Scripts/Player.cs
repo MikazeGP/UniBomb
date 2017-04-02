@@ -109,7 +109,7 @@ public class Player : Origin{
 
             return;
         }
-        
+        // ゲームマネージャーが更新時、入力処理を更新する
         if(m_gamemgr.m_currentState == GameMgr.GAME_STATE.UPDATE) {
 
             // 入力処理の更新
@@ -129,8 +129,10 @@ public class Player : Origin{
     /// </summary>
     void InputUpdate() {
 
+        //　ボム発射処理
         this.ShotBomb();
 
+        //　移動処理
         this.MoveFunc();
     } 
    /// <summary>

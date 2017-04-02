@@ -19,7 +19,7 @@ class NetworkControl : Origin
 
     public GameMgr m_gameMgr;
 
-    // Use this for initialization
+    // 初期化処理
     void Start()
     {
         print(PlayerId);
@@ -37,7 +37,7 @@ class NetworkControl : Origin
         MonobitEngine.MonobitNetwork.updateStreamRate = 600;
     }
 
-    // Update is called once per frame
+    // 更新処理
     void Update()
     {
         // MUNサーバに接続しており、かつルームに入室している場合
@@ -47,7 +47,9 @@ class NetworkControl : Origin
             // プレイヤーキャラクタが未登場の場合に登場させる
             if (playerObject == null && m_gameMgr.m_dieFlag[PlayerId] != true){
 
+                // グローバルデータからIDを読み込む
                 m_playerNo = MonobitNetwork.player.ID;
+                // プレイヤーを生成
                 GameObject m_plrObj = MonobitNetwork.Instantiate("Prefabs/" + m_playerName, SpawnPos(m_playerNo), SpawnQuat(m_playerNo), 0);
 
                 playerObject = m_plrObj;
@@ -63,7 +65,7 @@ class NetworkControl : Origin
     /// <returns></returns>
     Vector3 SpawnPos(int num)
     {
-
+        // 初期位置を原点にする
         Vector3 Pos = Vector3.zero;
 
         switch (num)

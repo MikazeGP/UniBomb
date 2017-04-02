@@ -29,7 +29,7 @@ public class Effect : Origin {
     // 生成したプレイヤーID
     private int m_createId;
 
-    // Use this for initialization
+    // 更新処理
     void Start () {
 
         m_gameMgr = GameObject.Find(GAME_MGR).GetComponent<GameMgr>();
@@ -89,6 +89,7 @@ public class Effect : Origin {
     // キャラに応じてエフェクトの大きさを変更
     void ChangeScale(string name) {
 
+        // キャラの名前で変更
         switch (name)
         {
 
@@ -136,12 +137,14 @@ public class Effect : Origin {
 
             case "Misaki":
 
+                // ここで音を再生
                 AudioManager.Instance.PlaySE(AUDIO.SE_MISAK_RUPTURE);
 
                 break;
 
             case "Yuko":
 
+                // ここで音を再生
                 AudioManager.Instance.PlaySE(AUDIO.SE_YUKO_RUPTURE);
 
                 break;

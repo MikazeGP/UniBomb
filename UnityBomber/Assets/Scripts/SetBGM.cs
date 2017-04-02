@@ -1,16 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// BGMを設定するクラス
+/// </summary>
 public class SetBGM : Origin {
 
+    //========================================================
+    // 定数
+    //========================================================
     private const string COROUTINE_PLAY_BGM = "PlayBGM";
 
+    //========================================================
+    // リテラル
+    //========================================================
+    // BGMの番号
     public int m_bgmNum;
 
-	// Use this for initialization
+	// 初期化処理
 	void Start () {
+        //　グローバルデータからBGMの番号を取得
         m_bgmNum = GrobalData.Instance._BGMNum;
 
+        //　コルーチンの開始
         StartCoroutine(COROUTINE_PLAY_BGM);
 	}
 	private IEnumerator PlayBGM() {

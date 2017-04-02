@@ -17,9 +17,10 @@ public class LoadManager : Origin {
 
 	}
 	
-	// Update is called once per frame
+	// 更新処理
 	void Update () {
 
+        // フレームカウントの更新
         FrameCount++;
 
         if(FrameCount == 120) {

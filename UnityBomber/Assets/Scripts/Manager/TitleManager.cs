@@ -2,33 +2,39 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/// <summary>
+/// タイトルを管理するクラス
+/// </summary>
 public class TitleManager : Origin {
 
     public GameObject textObj;
     
     private float nextTime;
     public float interval = 0.8f; //点滅周期
+    // 更新停止フラグ
     public bool stop;
 
-    // Use this for initialization
+    // 初期化処理
     void Start () {
 
+        // BGMの再生
         AudioManager.Instance.PlayBGM(AUDIO.BGM_TITLE, AudioManager.BGM_FADE_SPEED_RATE_HIGH);
 
         nextTime = Time.time;
 
+        // 更新させる
         stop = false;
 
         FrameCount = 0;
-
-        
 	}
 	
-	// Update is called once per frame
+	// 更新処理
 	void Update () {
 
+        // フレームをインクリメントする
         FrameCount++;
 
+        //　点滅処理
         this.Invincible();
 
         if (FrameCount >= 60)
@@ -39,7 +45,7 @@ public class TitleManager : Origin {
             this.State();
         }
 	}
-
+    // 点滅処理
     void Invincible() {
 
         

@@ -4,8 +4,6 @@ using System;
 
 namespace ItemAbility{
    
-
-
     // 基底クラス
     public abstract class ItemAbility{
         //========================================================
@@ -21,9 +19,10 @@ namespace ItemAbility{
         // 移動速度
         protected const float SPEED_MIN = 1.5f;
         protected const float SPEED_MAX = 3.8f;
-
+        // アイテムの設定
         public abstract void SetAbility(Player plr);
 
+        // アイテム番号をランダムに設定
         protected int m_itemNum(){
 
             int random = UnityEngine.Random.Range(0, 100);
@@ -90,7 +89,7 @@ namespace ItemAbility{
                     Debug.Log("全ステータスアップ");
                     break;
             }
-
+            // ステータスの上限を確認
             ClampStatus(plr);
         }
     }
@@ -98,13 +97,16 @@ namespace ItemAbility{
     // プレイヤーNuffクラス
     public class DownAbility : ItemAbility{
 
+        // タイマー
         private Timer m_timer;
+        // プレイヤー
         private Player m_plr;
         private float m_backUpSpeed;
         private int m_num;
 
         public override void SetAbility(Player plr){
 
+            // アイテム取得時、SEを再生
             AudioManager.Instance.PlaySE(AUDIO.SE_NUFF);
 
             m_plr = plr;
@@ -143,6 +145,7 @@ namespace ItemAbility{
                     Debug.Log("全ステータスダウン");
                     break;
             }
+            // ステータスの上限を確認
             ClampStatus(m_plr);
         }
     }
